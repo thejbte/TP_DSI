@@ -1,0 +1,492 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title "Kit Development for MCU PIC"
+Date "2019-05-05"
+Rev "1.0"
+Comp "Julian Bustamante Narvaez"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 5500 1650 0    50   Input ~ 10
++5V0
+Text GLabel 6200 1650 2    50   Input ~ 10
++3V3
+$Comp
+L Device:Jumper_NC_Dual JP1
+U 1 1 5CD38D50
+P 5850 1650
+F 0 "JP1" H 5850 1889 50  0000 C CNN
+F 1 "Jumper_NC_Dual" H 5850 1798 50  0000 C CNN
+F 2 "" H 5850 1650 50  0001 C CNN
+F 3 "~" H 5850 1650 50  0001 C CNN
+	1    5850 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1650 5600 1650
+Wire Wire Line
+	6200 1650 6100 1650
+$Comp
+L power:GND #PWR09
+U 1 1 5CD3ACC2
+P 5850 5500
+F 0 "#PWR09" H 5850 5250 50  0001 C CNN
+F 1 "GND" H 5855 5327 50  0000 C CNN
+F 2 "" H 5850 5500 50  0001 C CNN
+F 3 "" H 5850 5500 50  0001 C CNN
+	1    5850 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5250 5850 5300
+Wire Wire Line
+	5950 5300 5950 5250
+Wire Wire Line
+	5850 5300 5950 5300
+Wire Wire Line
+	5850 5500 5850 5300
+Connection ~ 5850 5300
+$Comp
+L power:GND #PWR010
+U 1 1 5CD3DE5A
+P 6650 2000
+F 0 "#PWR010" H 6650 1750 50  0001 C CNN
+F 1 "GND" V 6655 1872 50  0000 R CNN
+F 2 "" H 6650 2000 50  0001 C CNN
+F 3 "" H 6650 2000 50  0001 C CNN
+	1    6650 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6500 2000 6650 2000
+$Comp
+L Device:Crystal Y1
+U 1 1 5CD3F734
+P 2750 3900
+F 0 "Y1" V 2796 3769 50  0000 R CNN
+F 1 "Crystal" V 2705 3769 50  0000 R CNN
+F 2 "" H 2750 3900 50  0001 C CNN
+F 3 "~" H 2750 3900 50  0001 C CNN
+	1    2750 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5CD415AC
+P 2550 3700
+F 0 "C5" V 2802 3700 50  0000 C CNN
+F 1 "22pF" V 2711 3700 50  0000 C CNN
+F 2 "" H 2588 3550 50  0001 C CNN
+F 3 "~" H 2550 3700 50  0001 C CNN
+	1    2550 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5CD42B0F
+P 2550 4150
+F 0 "C6" V 2802 4150 50  0000 C CNN
+F 1 "22pF" V 2711 4150 50  0000 C CNN
+F 2 "" H 2588 4000 50  0001 C CNN
+F 3 "~" H 2550 4150 50  0001 C CNN
+	1    2550 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5CD445C9
+P 2250 3700
+F 0 "#PWR07" H 2250 3450 50  0001 C CNN
+F 1 "GND" V 2255 3572 50  0000 R CNN
+F 2 "" H 2250 3700 50  0001 C CNN
+F 3 "" H 2250 3700 50  0001 C CNN
+	1    2250 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5CD44CEB
+P 2250 4150
+F 0 "#PWR08" H 2250 3900 50  0001 C CNN
+F 1 "GND" V 2255 4022 50  0000 R CNN
+F 2 "" H 2250 4150 50  0001 C CNN
+F 3 "" H 2250 4150 50  0001 C CNN
+	1    2250 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 3700 2400 3700
+Wire Wire Line
+	2700 3700 2750 3700
+Wire Wire Line
+	2750 3700 2750 3750
+Wire Wire Line
+	2750 4050 2750 4150
+Wire Wire Line
+	2750 4150 2700 4150
+Wire Wire Line
+	2400 4150 2250 4150
+Wire Wire Line
+	3150 3950 3150 4150
+Wire Wire Line
+	3150 4150 2750 4150
+Connection ~ 2750 4150
+Wire Wire Line
+	3150 3850 3150 3700
+Wire Wire Line
+	3150 3700 2750 3700
+Connection ~ 2750 3700
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5CD474C2
+P 8900 4850
+F 0 "SW1" H 8900 5135 50  0000 C CNN
+F 1 "SW_Push" H 8900 5044 50  0000 C CNN
+F 2 "" H 8900 5050 50  0001 C CNN
+F 3 "~" H 8900 5050 50  0001 C CNN
+	1    8900 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5CD4C18B
+P 8550 4650
+F 0 "R3" H 8620 4696 50  0000 L CNN
+F 1 "10K" H 8620 4605 50  0000 L CNN
+F 2 "" V 8480 4650 50  0001 C CNN
+F 3 "~" H 8550 4650 50  0001 C CNN
+	1    8550 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 1750 5850 2000
+Wire Wire Line
+	5950 2450 5950 2000
+Wire Wire Line
+	5950 2000 6200 2000
+Wire Wire Line
+	5950 2000 5850 2000
+Connection ~ 5950 2000
+Connection ~ 5850 2000
+Wire Wire Line
+	5850 2000 5850 2450
+Text Label 8550 4350 1    50   ~ 10
+VDD
+$Comp
+L Device:C C7
+U 1 1 5CD3BBDB
+P 6350 2000
+F 0 "C7" V 6098 2000 50  0000 C CNN
+F 1 "0.1uF" V 6189 2000 50  0000 C CNN
+F 2 "" H 6388 1850 50  0001 C CNN
+F 3 "~" H 6350 2000 50  0001 C CNN
+	1    6350 2000
+	0    1    1    0   
+$EndComp
+Text Label 6150 2000 2    50   ~ 10
+VDD
+Wire Wire Line
+	8550 4350 8550 4500
+Wire Wire Line
+	8550 4800 8550 4850
+Wire Wire Line
+	8550 4850 8700 4850
+Wire Wire Line
+	8550 4850 7650 4850
+Connection ~ 8550 4850
+$Comp
+L power:GND #PWR012
+U 1 1 5CD53135
+P 9200 5000
+F 0 "#PWR012" H 9200 4750 50  0001 C CNN
+F 1 "GND" H 9205 4827 50  0000 C CNN
+F 2 "" H 9200 5000 50  0001 C CNN
+F 3 "" H 9200 5000 50  0001 C CNN
+	1    9200 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4850 9100 4850
+Wire Wire Line
+	9200 4850 9200 5000
+$Comp
+L Device:R R4
+U 1 1 5CD553E2
+P 8550 5000
+F 0 "R4" H 8620 5046 50  0000 L CNN
+F 1 "DNP-10K" H 8620 4955 50  0000 L CNN
+F 2 "" V 8480 5000 50  0001 C CNN
+F 3 "~" H 8550 5000 50  0001 C CNN
+	1    8550 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5CD55E87
+P 8550 5200
+F 0 "#PWR011" H 8550 4950 50  0001 C CNN
+F 1 "GND" H 8555 5027 50  0000 C CNN
+F 2 "" H 8550 5200 50  0001 C CNN
+F 3 "" H 8550 5200 50  0001 C CNN
+	1    8550 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 5150 8550 5200
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5CD587B3
+P 10400 1450
+F 0 "SW2" H 10400 1735 50  0000 C CNN
+F 1 "SW_Push" H 10400 1644 50  0000 C CNN
+F 2 "" H 10400 1650 50  0001 C CNN
+F 3 "~" H 10400 1650 50  0001 C CNN
+	1    10400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5CD587BD
+P 10050 1250
+F 0 "R5" H 10120 1296 50  0000 L CNN
+F 1 "10K" H 10120 1205 50  0000 L CNN
+F 2 "" V 9980 1250 50  0001 C CNN
+F 3 "~" H 10050 1250 50  0001 C CNN
+	1    10050 1250
+	1    0    0    -1  
+$EndComp
+Text Label 10050 950  1    50   ~ 10
+VDD
+Wire Wire Line
+	10050 950  10050 1100
+$Comp
+L power:GND #PWR014
+U 1 1 5CD587CD
+P 10700 1600
+F 0 "#PWR014" H 10700 1350 50  0001 C CNN
+F 1 "GND" H 10705 1427 50  0000 C CNN
+F 2 "" H 10700 1600 50  0001 C CNN
+F 3 "" H 10700 1600 50  0001 C CNN
+	1    10700 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 1450 10600 1450
+Wire Wire Line
+	10700 1450 10700 1600
+$Comp
+L Device:R R6
+U 1 1 5CD587D9
+P 10050 1600
+F 0 "R6" H 10120 1646 50  0000 L CNN
+F 1 "DNP-10K" H 10120 1555 50  0000 L CNN
+F 2 "" V 9980 1600 50  0001 C CNN
+F 3 "~" H 10050 1600 50  0001 C CNN
+	1    10050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5CD587E3
+P 10050 1800
+F 0 "#PWR013" H 10050 1550 50  0001 C CNN
+F 1 "GND" H 10055 1627 50  0000 C CNN
+F 2 "" H 10050 1800 50  0001 C CNN
+F 3 "" H 10050 1800 50  0001 C CNN
+	1    10050 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 1750 10050 1800
+Text Label 9750 1450 2    50   ~ 10
+USER_BUTTON
+Wire Wire Line
+	10200 1450 10050 1450
+Wire Wire Line
+	10050 1400 10050 1450
+Connection ~ 10050 1450
+Wire Wire Line
+	10050 1450 9750 1450
+Text Label 4050 4150 2    50   ~ 10
+USER_BUTTON
+Text Label 8250 4850 2    50   ~ 10
+RESET
+Wire Wire Line
+	3150 3950 4050 3950
+Wire Wire Line
+	3150 3850 4050 3850
+Text HLabel 3850 3550 0    50   BiDi ~ 10
+RA3_AN3
+Text HLabel 3850 3450 0    50   BiDi ~ 10
+RA2_AN2
+Text HLabel 3850 3350 0    50   BiDi ~ 10
+RA1_AN1
+Text HLabel 3850 3250 0    50   BiDi ~ 10
+RA0_AN0
+Wire Wire Line
+	3850 3550 4050 3550
+Wire Wire Line
+	4050 3450 3850 3450
+Wire Wire Line
+	3850 3350 4050 3350
+Wire Wire Line
+	4050 3250 3850 3250
+Text HLabel 8500 3350 2    50   Output ~ 10
+TX
+Text HLabel 8500 3450 2    50   Input ~ 10
+RX
+Wire Wire Line
+	8250 3350 8500 3350
+Wire Wire Line
+	8250 3450 8500 3450
+$Comp
+L Device:R R1
+U 1 1 5CD7750C
+P 8100 3350
+F 0 "R1" V 8150 3400 50  0000 L CNN
+F 1 "470" V 8150 3200 50  0000 L CNN
+F 2 "" V 8030 3350 50  0001 C CNN
+F 3 "~" H 8100 3350 50  0001 C CNN
+	1    8100 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CD6FD8F
+P 8100 3450
+F 0 "R2" V 8000 3450 50  0000 L CNN
+F 1 "470" V 8000 3250 50  0000 L CNN
+F 2 "" V 8030 3450 50  0001 C CNN
+F 3 "~" H 8100 3450 50  0001 C CNN
+	1    8100 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 3350 7650 3350
+Wire Wire Line
+	7950 3450 7650 3450
+Text HLabel 10450 3100 2    50   Output ~ 10
+LED_G
+Text HLabel 10450 2900 2    50   Output ~ 10
+LED_R
+Text HLabel 10450 3300 2    50   Output ~ 10
+LED_B
+Text Label 9800 2900 2    50   ~ 10
+RE0
+Text Label 9800 3100 2    50   ~ 10
+RE1
+Text Label 9800 3300 2    50   ~ 10
+RE2
+Text HLabel 3850 3750 0    50   Input ~ 10
+POT_AN5
+Wire Wire Line
+	4050 3750 3850 3750
+Wire Wire Line
+	7650 3650 7750 3650
+Text HLabel 7750 3650 2    50   Output ~ 10
+RD0
+Wire Wire Line
+	7650 3750 7750 3750
+Text HLabel 7750 3750 2    50   Output ~ 10
+RD1
+Wire Wire Line
+	7650 3850 7750 3850
+Text HLabel 7750 3850 2    50   Output ~ 10
+RD2
+Wire Wire Line
+	7650 3950 7750 3950
+Text HLabel 7750 3950 2    50   Output ~ 10
+RD3
+Wire Wire Line
+	7650 4050 7750 4050
+Text HLabel 7750 4050 2    50   BiDi ~ 10
+RD4
+Wire Wire Line
+	7650 4150 7750 4150
+Text HLabel 7750 4150 2    50   BiDi ~ 10
+RD5
+Wire Wire Line
+	7650 4250 7750 4250
+Text HLabel 7750 4250 2    50   BiDi ~ 10
+RD6
+Wire Wire Line
+	7650 4350 7750 4350
+Text HLabel 7750 4350 2    50   BiDi ~ 10
+RD7
+Text HLabel 7650 3050 2    50   BiDi ~ 10
+SDA_I2C
+Text HLabel 7650 3150 2    50   BiDi ~ 10
+SCL_I2C
+Text Label 7650 4750 0    50   ~ 10
+RE2
+Text Label 7650 4650 0    50   ~ 10
+RE1
+Text Label 7650 4550 0    50   ~ 10
+RE0
+Text HLabel 8600 2750 2    50   Output ~ 10
+LED_OUT
+$Comp
+L MCU_Microchip_PIC16:PIC16F1939-IPT U2
+U 1 1 5CCEA30F
+P 5850 3850
+F 0 "U2" H 5850 5431 50  0000 C CNN
+F 1 "PIC16F1939-IPT" H 5850 5340 50  0000 C CNN
+F 2 "" H 5850 3850 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41364E.pdf" H 5850 3850 50  0001 C CNN
+	1    5850 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4850 3950 4850
+Text HLabel 3950 4850 0    50   Output ~ 10
+RB7
+Wire Wire Line
+	4050 4750 3950 4750
+Text HLabel 3950 4750 0    50   Output ~ 10
+RB6
+Wire Wire Line
+	4050 4650 3950 4650
+Text HLabel 3950 4650 0    50   Output ~ 10
+RB5
+Wire Wire Line
+	4050 4550 3950 4550
+Text HLabel 3950 4550 0    50   BiDi ~ 10
+RB4
+Wire Wire Line
+	4050 4450 3950 4450
+Text HLabel 3950 4450 0    50   BiDi ~ 10
+RB3
+Wire Wire Line
+	4050 4350 3950 4350
+Text HLabel 3950 4350 0    50   BiDi ~ 10
+RB2
+Wire Wire Line
+	4050 4250 3950 4250
+Text HLabel 3950 4250 0    50   BiDi ~ 10
+RB1
+Text HLabel 7650 2850 2    50   Output ~ 10
+RC1
+Text HLabel 7650 2950 2    50   Output ~ 10
+RC2
+Text HLabel 7650 3250 2    50   Output ~ 10
+RC5
+Wire Wire Line
+	9800 3300 10450 3300
+Wire Wire Line
+	9800 3100 10450 3100
+Wire Wire Line
+	9800 2900 10450 2900
+Wire Wire Line
+	7650 2750 8600 2750
+Text GLabel 6200 2200 2    50   Output ~ 10
+VDD
+Wire Wire Line
+	6200 2200 6200 2000
+Connection ~ 6200 2000
+$EndSCHEMATC

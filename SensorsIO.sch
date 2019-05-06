@@ -1,0 +1,272 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title "Kit Development for MCU PIC"
+Date "2019-05-05"
+Rev "1.0"
+Comp "Julian Bustamante Narvaez"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5150 2150 5150 2050
+$Comp
+L Device:R R?
+U 1 1 5CE24118
+P 5150 1900
+AR Path="/5CCF7078/5CE24118" Ref="R?"  Part="1" 
+AR Path="/5CCF6F7E/5CE24118" Ref="R7"  Part="1" 
+F 0 "R7" H 5220 1946 50  0000 L CNN
+F 1 "330" H 5220 1855 50  0000 L CNN
+F 2 "" V 5080 1900 50  0001 C CNN
+F 3 "~" H 5150 1900 50  0001 C CNN
+	1    5150 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5CE2411E
+P 5150 2300
+AR Path="/5CCF7078/5CE2411E" Ref="D?"  Part="1" 
+AR Path="/5CCF6F7E/5CE2411E" Ref="D4"  Part="1" 
+F 0 "D4" V 5189 2183 50  0000 R CNN
+F 1 "LED" V 5098 2183 50  0000 R CNN
+F 2 "" H 5150 2300 50  0001 C CNN
+F 3 "~" H 5150 2300 50  0001 C CNN
+	1    5150 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_RGB D5
+U 1 1 5CE249B8
+P 6100 2350
+F 0 "D5" V 6146 2020 50  0000 R CNN
+F 1 "LED_RGB" V 6055 2020 50  0000 R CNN
+F 2 "" H 6100 2300 50  0001 C CNN
+F 3 "~" H 6100 2300 50  0001 C CNN
+	1    6100 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J4
+U 1 1 5CE27928
+P 2900 2600
+F 0 "J4" H 2872 2482 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 2872 2573 50  0000 R CNN
+F 2 "" H 2900 2600 50  0001 C CNN
+F 3 "~" H 2900 2600 50  0001 C CNN
+	1    2900 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5CE29D0F
+P 7650 2350
+F 0 "RV1" H 7581 2396 50  0000 R CNN
+F 1 "10K" H 7581 2305 50  0000 R CNN
+F 2 "" H 7650 2350 50  0001 C CNN
+F 3 "~" H 7650 2350 50  0001 C CNN
+	1    7650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J5
+U 1 1 5CE2B4D2
+P 2900 3150
+F 0 "J5" H 2872 3032 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 2872 3123 50  0000 R CNN
+F 2 "" H 2900 3150 50  0001 C CNN
+F 3 "~" H 2900 3150 50  0001 C CNN
+	1    2900 3150
+	-1   0    0    1   
+$EndComp
+Text HLabel 2700 2950 0    50   Input ~ 10
+IO_D8
+Text HLabel 2700 3050 0    50   Input ~ 10
+IO_D9
+Text HLabel 2700 3250 0    50   Input ~ 10
+IO_D11
+Text HLabel 2700 2400 0    50   Input ~ 10
+AIN0
+Text HLabel 2700 2500 0    50   Input ~ 10
+AIN1
+Text HLabel 2700 2600 0    50   Input ~ 10
+AIN2
+Text HLabel 2700 2700 0    50   Input ~ 10
+AIN3
+Text HLabel 2700 1250 0    50   Input ~ 10
+IO_D1
+Text HLabel 2700 1350 0    50   Input ~ 10
+IO_D2
+Text HLabel 2700 1450 0    50   Input ~ 10
+IO_D3
+Text HLabel 2700 1550 0    50   Input ~ 10
+IO_D4
+Text HLabel 2700 1650 0    50   Input ~ 10
+IO_D5
+Text HLabel 2700 1750 0    50   Input ~ 10
+IO_D6
+Text HLabel 5150 1750 0    50   Input ~ 10
+LED_OUT
+Text HLabel 5900 1800 1    50   Input ~ 10
+LED_R
+Text HLabel 6100 1800 1    50   Input ~ 10
+LED_G
+Text HLabel 6300 1800 1    50   Input ~ 10
+LED_B
+Wire Wire Line
+	5900 2700 6100 2700
+Wire Wire Line
+	6100 2700 6100 2550
+Wire Wire Line
+	6300 2550 6300 2700
+Wire Wire Line
+	6300 2700 6100 2700
+Connection ~ 6100 2700
+Wire Wire Line
+	5900 2550 5900 2700
+$Comp
+L power:GND #PWR017
+U 1 1 5CE2E82D
+P 6100 2900
+F 0 "#PWR017" H 6100 2650 50  0001 C CNN
+F 1 "GND" H 6105 2727 50  0000 C CNN
+F 2 "" H 6100 2900 50  0001 C CNN
+F 3 "" H 6100 2900 50  0001 C CNN
+	1    6100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2700 6100 2900
+$Comp
+L Device:R R?
+U 1 1 5CE394BD
+P 6300 1950
+AR Path="/5CCEA06C/5CE394BD" Ref="R?"  Part="1" 
+AR Path="/5CCF6F7E/5CE394BD" Ref="R10"  Part="1" 
+F 0 "R10" V 6350 2000 50  0000 L CNN
+F 1 "330" V 6350 1800 50  0000 L CNN
+F 2 "" V 6230 1950 50  0001 C CNN
+F 3 "~" H 6300 1950 50  0001 C CNN
+	1    6300 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CE394C3
+P 6100 1950
+AR Path="/5CCEA06C/5CE394C3" Ref="R?"  Part="1" 
+AR Path="/5CCF6F7E/5CE394C3" Ref="R9"  Part="1" 
+F 0 "R9" V 6000 1950 50  0000 L CNN
+F 1 "330" V 6000 1750 50  0000 L CNN
+F 2 "" V 6030 1950 50  0001 C CNN
+F 3 "~" H 6100 1950 50  0001 C CNN
+	1    6100 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CE394C9
+P 5900 1950
+AR Path="/5CCEA06C/5CE394C9" Ref="R?"  Part="1" 
+AR Path="/5CCF6F7E/5CE394C9" Ref="R8"  Part="1" 
+F 0 "R8" V 5800 1950 50  0000 L CNN
+F 1 "330" V 5800 1750 50  0000 L CNN
+F 2 "" V 5830 1950 50  0001 C CNN
+F 3 "~" H 5900 1950 50  0001 C CNN
+	1    5900 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2150 6300 2100
+Wire Wire Line
+	6100 2150 6100 2100
+Wire Wire Line
+	5900 2150 5900 2100
+$Comp
+L power:GND #PWR016
+U 1 1 5CE3F7BF
+P 5150 2650
+F 0 "#PWR016" H 5150 2400 50  0001 C CNN
+F 1 "GND" H 5155 2477 50  0000 C CNN
+F 2 "" H 5150 2650 50  0001 C CNN
+F 3 "" H 5150 2650 50  0001 C CNN
+	1    5150 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2450 5150 2650
+Text HLabel 7950 2350 2    50   Input ~ 10
+POT
+Wire Wire Line
+	7950 2350 7800 2350
+Text GLabel 7400 1400 0    50   Output ~ 10
+VDD
+$Comp
+L power:GND #PWR018
+U 1 1 5CE41733
+P 7650 2850
+F 0 "#PWR018" H 7650 2600 50  0001 C CNN
+F 1 "GND" H 7655 2677 50  0000 C CNN
+F 2 "" H 7650 2850 50  0001 C CNN
+F 3 "" H 7650 2850 50  0001 C CNN
+	1    7650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5CE41EFC
+P 7650 2650
+F 0 "R11" H 7720 2696 50  0000 L CNN
+F 1 "1K" H 7720 2605 50  0000 L CNN
+F 2 "" V 7580 2650 50  0001 C CNN
+F 3 "~" H 7650 2650 50  0001 C CNN
+	1    7650 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2850 7650 2800
+Text HLabel 2700 3150 0    50   Input ~ 10
+IO_D10
+Wire Wire Line
+	7400 1400 7650 1400
+Wire Wire Line
+	7650 1400 7650 2200
+$Comp
+L Connector:Conn_01x10_Male J3
+U 1 1 5CE5D9BC
+P 2900 1650
+F 0 "J3" H 2872 1624 50  0000 R CNN
+F 1 "Conn_01x10_Male" H 2872 1533 50  0000 R CNN
+F 2 "" H 2900 1650 50  0001 C CNN
+F 3 "~" H 2900 1650 50  0001 C CNN
+	1    2900 1650
+	-1   0    0    -1  
+$EndComp
+Text HLabel 2700 1850 0    50   Input ~ 10
+IO_D7
+Text GLabel 2600 2050 0    50   Input ~ 10
++5V0
+Text GLabel 2600 1950 0    50   Input ~ 10
++3V3
+Wire Wire Line
+	2600 2050 2700 2050
+Wire Wire Line
+	2600 1950 2700 1950
+$Comp
+L power:GND #PWR015
+U 1 1 5CE63A36
+P 2700 2150
+F 0 "#PWR015" H 2700 1900 50  0001 C CNN
+F 1 "GND" V 2705 2022 50  0000 R CNN
+F 2 "" H 2700 2150 50  0001 C CNN
+F 3 "" H 2700 2150 50  0001 C CNN
+	1    2700 2150
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
