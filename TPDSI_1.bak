@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:TPDSI_1-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 5
 Title "Kit Development for MCU PIC"
 Date "2019-05-05"
-Rev "1.0"
+Rev "1.1"
 Comp "Julian Bustamante Narvaez"
 Comment1 ""
 Comment2 ""
@@ -97,12 +98,6 @@ F5 "D" I R 2200 4400 50
 F6 "DIG2_CA" I R 2200 4600 50 
 F7 "DIG1_CA" I R 2200 4500 50 
 F8 "DP1" I R 2200 4700 50 
-$EndSheet
-$Sheet
-S 3650 1550 850  600 
-U 5CCF7109
-F0 "UARTDebug" 50
-F1 "UARTDebug.sch" 50
 $EndSheet
 Text GLabel 9000 1700 2    50   Output ~ 10
 +5V0
@@ -210,8 +205,6 @@ Wire Wire Line
 	4800 4700 5100 4700
 Wire Wire Line
 	4800 4800 5100 4800
-Text Label 5100 4200 2    50   ~ 10
-RB1
 Text Label 5100 4300 2    50   ~ 10
 RB2
 Text Label 5100 4400 2    50   ~ 10
@@ -299,20 +292,8 @@ AN0
 Text Label 8850 3400 0    50   ~ 10
 POTENCIOMETRO
 Wire Wire Line
-	7950 4100 7300 4100
-Wire Wire Line
-	7950 4200 7300 4200
-Wire Wire Line
-	7950 4300 7300 4300
-Wire Wire Line
 	7950 4400 7300 4400
-Text Label 7300 4300 0    50   ~ 10
-LED_G
-Text Label 7300 4400 0    50   ~ 10
-LED_B
-Text Label 7300 4200 0    50   ~ 10
-LED_R
-Text Label 7300 4100 0    50   ~ 10
+Text Label 7600 4100 0    50   ~ 10
 LED_OUT
 Wire Wire Line
 	7950 4950 7700 4950
@@ -330,4 +311,100 @@ Text Label 7700 5150 0    50   ~ 10
 RD6
 Text Label 7700 5250 0    50   ~ 10
 RD7
+Text Label 5100 4200 2    50   ~ 10
+RB1
+Entry Wire Line
+	5200 4100 5100 4200
+Entry Wire Line
+	5200 4200 5100 4300
+Entry Wire Line
+	5200 4300 5100 4400
+Entry Wire Line
+	5200 4400 5100 4500
+Entry Wire Line
+	5200 4500 5100 4600
+Entry Wire Line
+	5200 4600 5100 4700
+Entry Wire Line
+	5200 4700 5100 4800
+Entry Wire Line
+	3400 4500 3300 4600
+Entry Wire Line
+	3400 4600 3300 4700
+Entry Wire Line
+	3400 4700 3300 4800
+Entry Wire Line
+	3400 4800 3300 4900
+Entry Wire Line
+	7700 4950 7600 5050
+Entry Wire Line
+	7700 5050 7600 5150
+Entry Wire Line
+	7700 5150 7600 5250
+Entry Wire Line
+	7700 5250 7600 5350
+Wire Bus Line
+	3300 5500 7600 5500
+Entry Wire Line
+	3350 3500 3250 3400
+Entry Wire Line
+	3350 3400 3250 3300
+Entry Wire Line
+	3350 3300 3250 3200
+Entry Wire Line
+	3350 3200 3250 3100
+Entry Wire Line
+	9250 3500 9150 3600
+Entry Wire Line
+	9250 3600 9150 3700
+Entry Wire Line
+	9250 3700 9150 3800
+Entry Wire Line
+	9250 3800 9150 3900
+Wire Bus Line
+	9250 2800 3250 2800
+Entry Wire Line
+	7650 3350 7550 3250
+Entry Wire Line
+	7650 3450 7550 3350
+Entry Wire Line
+	7650 3550 7550 3450
+Entry Wire Line
+	7650 3650 7550 3550
+Entry Wire Line
+	7650 3750 7550 3650
+Entry Wire Line
+	7650 3850 7550 3750
+Entry Wire Line
+	7650 3950 7550 3850
+Text Label 7300 4200 0    50   ~ 10
+LED_R
+Text Label 7300 4400 0    50   ~ 10
+LED_B
+Text Label 7300 4300 0    50   ~ 10
+LED_G
+Wire Wire Line
+	7950 4300 7300 4300
+Wire Wire Line
+	7950 4200 7300 4200
+Wire Wire Line
+	7950 4100 7300 4100
+Wire Bus Line
+	7550 3850 5550 3850
+Wire Bus Line
+	5550 3850 5550 4100
+Wire Bus Line
+	5200 4100 5550 4100
+Wire Bus Line
+	9250 2800 9250 3800
+Wire Bus Line
+	3250 2800 3250 3400
+Wire Bus Line
+	7600 5050 7600 5500
+Wire Bus Line
+	3300 4600 3300 5500
+Wire Bus Line
+	5200 4100 5200 4700
+Wire Bus Line
+	7550 3250 7550 3850
 $EndSCHEMATC

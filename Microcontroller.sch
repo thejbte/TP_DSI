@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:TPDSI_1-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
 Title "Kit Development for MCU PIC"
-Date "2019-05-05"
-Rev "1.0"
+Date "2019-05-06"
+Rev "1.1"
 Comp "Julian Bustamante Narvaez"
 Comment1 ""
 Comment2 ""
@@ -43,15 +44,6 @@ F 3 "" H 5850 5500 50  0001 C CNN
 	1    5850 5500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5850 5250 5850 5300
-Wire Wire Line
-	5950 5300 5950 5250
-Wire Wire Line
-	5850 5300 5950 5300
-Wire Wire Line
-	5850 5500 5850 5300
-Connection ~ 5850 5300
 $Comp
 L power:GND #PWR010
 U 1 1 5CD3DE5A
@@ -315,7 +307,7 @@ Wire Wire Line
 	10050 1450 9750 1450
 Text Label 4050 4150 2    50   ~ 10
 USER_BUTTON
-Text Label 8250 4850 2    50   ~ 10
+Text Label 8400 4850 2    50   ~ 10
 RESET
 Wire Wire Line
 	3150 3950 4050 3950
@@ -442,33 +434,19 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41364E.pdf" H 5850 3850 50 
 	1    5850 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4050 4850 3950 4850
-Text HLabel 3950 4850 0    50   Output ~ 10
+Text HLabel 3850 5000 0    50   Output ~ 10
 RB7
-Wire Wire Line
-	4050 4750 3950 4750
-Text HLabel 3950 4750 0    50   Output ~ 10
+Text HLabel 3850 4750 0    50   Output ~ 10
 RB6
-Wire Wire Line
-	4050 4650 3950 4650
-Text HLabel 3950 4650 0    50   Output ~ 10
+Text HLabel 3850 4650 0    50   Output ~ 10
 RB5
-Wire Wire Line
-	4050 4550 3950 4550
-Text HLabel 3950 4550 0    50   BiDi ~ 10
+Text HLabel 3850 4550 0    50   BiDi ~ 10
 RB4
-Wire Wire Line
-	4050 4450 3950 4450
-Text HLabel 3950 4450 0    50   BiDi ~ 10
+Text HLabel 3850 4450 0    50   BiDi ~ 10
 RB3
-Wire Wire Line
-	4050 4350 3950 4350
-Text HLabel 3950 4350 0    50   BiDi ~ 10
+Text HLabel 3850 4350 0    50   BiDi ~ 10
 RB2
-Wire Wire Line
-	4050 4250 3950 4250
-Text HLabel 3950 4250 0    50   BiDi ~ 10
+Text HLabel 3850 4250 0    50   BiDi ~ 10
 RB1
 Text HLabel 7650 2850 2    50   Output ~ 10
 RC1
@@ -489,4 +467,91 @@ VDD
 Wire Wire Line
 	6200 2200 6200 2000
 Connection ~ 6200 2000
+$Comp
+L Connector:Conn_01x06_Male J6
+U 1 1 5CD0F49A
+P 1500 1900
+F 0 "J6" V 1654 1512 50  0000 R CNN
+F 1 "Conn_01x06_Male" V 1563 1512 50  0000 R CNN
+F 2 "" H 1500 1900 50  0001 C CNN
+F 3 "~" H 1500 1900 50  0001 C CNN
+	1    1500 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1700 1900 1700
+Wire Wire Line
+	1700 1800 1900 1800
+Wire Wire Line
+	1700 1900 1900 1900
+Wire Wire Line
+	1700 2000 1900 2000
+Wire Wire Line
+	1900 2100 1700 2100
+Wire Wire Line
+	1700 2200 1900 2200
+Text Label 1900 2200 0    50   ~ 0
+PGM(LVP)
+Text Label 1900 2100 0    50   ~ 0
+PGC(ICSPCLK)
+Text Label 1900 2000 0    50   ~ 0
+PGD(ICSPDAT)
+Text Label 1900 1900 0    50   ~ 0
+VSS
+Text Label 1900 1800 0    50   ~ 0
+VDD
+Text Label 1900 1700 0    50   ~ 0
+MCLR_VPP
+Text Label 3850 5150 2    50   ~ 0
+PGD(ICSPDAT)
+Text Label 7700 4850 0    50   ~ 0
+MCLR_VPP
+Text Label 5950 2150 0    50   ~ 0
+VDD
+Text Label 6150 5300 0    50   ~ 0
+VSS
+Wire Wire Line
+	5850 5250 5850 5300
+Wire Wire Line
+	6150 5300 5950 5300
+Wire Wire Line
+	5950 5300 5950 5250
+Wire Wire Line
+	5950 5300 5850 5300
+Connection ~ 5950 5300
+Connection ~ 5850 5300
+Wire Wire Line
+	5850 5300 5850 5500
+Text Label 3850 4900 2    50   ~ 0
+PGC(ICSPCLK)
+Wire Wire Line
+	4000 4850 4000 5000
+Wire Wire Line
+	3850 5000 4000 5000
+Connection ~ 4000 5000
+Wire Wire Line
+	3850 5150 4000 5150
+Wire Wire Line
+	4000 5000 4000 5150
+Wire Wire Line
+	3850 4750 3950 4750
+Wire Wire Line
+	4000 4850 4050 4850
+Connection ~ 3950 4750
+Wire Wire Line
+	3950 4750 4050 4750
+Wire Wire Line
+	3850 4250 4050 4250
+Wire Wire Line
+	3850 4350 4050 4350
+Wire Wire Line
+	3850 4450 4050 4450
+Wire Wire Line
+	3850 4550 4050 4550
+Wire Wire Line
+	3850 4650 4050 4650
+Wire Wire Line
+	3950 4900 3850 4900
+Wire Wire Line
+	3950 4750 3950 4900
 $EndSCHEMATC
