@@ -1,0 +1,15 @@
+ERC report (5/15/2019 12:22:04 AM, Encoding UTF8 )
+
+***** Sheet /
+
+***** Sheet /Display/
+
+***** Sheet /sheet5D002D0B/
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(81.28 mm, 80.01 mm): Pin 1 (Power input) of component #PWR04 is not driven (Net 29).
+
+***** Sheet /sheet5D0426A9/
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(250.19 mm, 121.92 mm): Pin 1 (Power input) of component #PWR027 is not driven (Net 39).
+
+ ** ERC messages: 2  Errors 0  Warnings 2
