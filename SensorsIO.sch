@@ -313,7 +313,7 @@ AR Path="/5D002D0B/5CE29D0F" Ref="RV1"  Part="1"
 AR Path="/5D086332/5CE29D0F" Ref="RV?"  Part="1" 
 F 0 "RV1" H 8031 3146 50  0000 R CNN
 F 1 "10K" H 8031 3055 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 8100 3100 50  0001 C CNN
+F 2 "Potentiometer_SMD:Potentiometer_ACP_CA6-VSMD_Vertical" H 8100 3100 50  0001 C CNN
 F 3 "~" H 8100 3100 50  0001 C CNN
 F 4 "987-1305-ND" H 8100 3100 50  0001 C CNN "Part Number"
 	1    8100 3100

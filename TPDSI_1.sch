@@ -43,7 +43,7 @@ F 4 "P16517DKR-ND" H 2900 1550 50  0001 C CNN "Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L J_ReguladorLinear:TLV2217_TO252-3 U?
+L TPDSI_1-rescue:TLV2217_TO252-3-J_ReguladorLinear U?
 U 1 1 5CDBB84A
 P 4000 1050
 AR Path="/5CCF7078/5CDBB84A" Ref="U?"  Part="1" 
@@ -57,7 +57,7 @@ F 4 "296-19786-1-ND" H 4000 1100 50  0001 C CNN " Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L J_ReguladorLinear:MC7805_TO252-3(DPACK) U?
+L TPDSI_1-rescue:MC7805_TO252-3(DPACK)-J_ReguladorLinear U?
 U 1 1 5CDBB851
 P 2250 1050
 AR Path="/5CCF7078/5CDBB851" Ref="U?"  Part="1" 
@@ -342,17 +342,6 @@ Wire Wire Line
 	1250 1250 1350 1250
 Wire Wire Line
 	1350 1250 1350 1800
-$Comp
-L Connector:Conn_01x02_Male J7
-U 1 1 5CF0DD35
-P 1050 1150
-F 0 "J7" H 1150 1350 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 1000 950 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 1050 1150 50  0001 C CNN
-F 3 "~" H 1050 1150 50  0001 C CNN
-	1    1050 1150
-	1    0    0    -1  
-$EndComp
 Text Label 1300 1150 0    50   ~ 0
 9V0
 $Comp
@@ -719,6 +708,61 @@ Wire Wire Line
 	3650 5750 5550 5750
 Wire Wire Line
 	3650 5850 5550 5850
+$Comp
+L Connector:Screw_Terminal_01x02 J7
+U 1 1 5CF6B993
+P 1050 1250
+F 0 "J7" H 968 925 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 968 1016 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1050 1250 50  0001 C CNN
+F 3 "~" H 1050 1250 50  0001 C CNN
+	1    1050 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5CF85774
+P 10050 1000
+F 0 "H1" H 10150 1046 50  0000 L CNN
+F 1 "MountingHole" H 10150 955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10050 1000 50  0001 C CNN
+F 3 "~" H 10050 1000 50  0001 C CNN
+	1    10050 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5CF8F6CA
+P 10050 1300
+F 0 "H2" H 10150 1346 50  0000 L CNN
+F 1 "MountingHole" H 10150 1255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10050 1300 50  0001 C CNN
+F 3 "~" H 10050 1300 50  0001 C CNN
+	1    10050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5CF918E9
+P 10050 1600
+F 0 "H3" H 10150 1646 50  0000 L CNN
+F 1 "MountingHole" H 10150 1555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10050 1600 50  0001 C CNN
+F 3 "~" H 10050 1600 50  0001 C CNN
+	1    10050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5CF93C5D
+P 10050 1850
+F 0 "H4" H 10150 1896 50  0000 L CNN
+F 1 "MountingHole" H 10150 1805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10050 1850 50  0001 C CNN
+F 3 "~" H 10050 1850 50  0001 C CNN
+	1    10050 1850
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	4050 3750 4050 4050
 Wire Bus Line
