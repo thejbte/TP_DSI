@@ -6,11 +6,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
 Title "Kit Development for MCU PIC"
-Date "2019-05-14"
-Rev "1.2"
-Comp "Julian Bustamante Narvaez"
-Comment1 ""
-Comment2 ""
+Date "2019-06-04"
+Rev "1.3"
+Comp "Autor: Julian Bustamante Narvaez"
+Comment1 "Rev : Jacobo Salvador"
+Comment2 "DCI-CESE 7Cohorte UBA."
 Comment3 ""
 Comment4 ""
 $EndDescr
