@@ -26,7 +26,7 @@ AR Path="/5D002D0B/5CE24118" Ref="R1"  Part="1"
 AR Path="/5D086332/5CE24118" Ref="R?"  Part="1" 
 F 0 "R1" H 5820 2946 50  0000 L CNN
 F 1 "330" H 5820 2855 50  0000 L CNN
-F 2 "" V 5680 2900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5680 2900 50  0001 C CNN
 F 3 "~" H 5750 2900 50  0001 C CNN
 	1    5750 2900
 	1    0    0    -1  
@@ -41,23 +41,10 @@ AR Path="/5D002D0B/5CE2411E" Ref="D4"  Part="1"
 AR Path="/5D086332/5CE2411E" Ref="D?"  Part="1" 
 F 0 "D4" V 5789 3183 50  0000 R CNN
 F 1 "LED" V 5698 3183 50  0000 R CNN
-F 2 "" H 5750 3300 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 5750 3300 50  0001 C CNN
 F 3 "~" H 5750 3300 50  0001 C CNN
+F 4 "160-1447-1-ND" V 5750 3300 50  0001 C CNN "Part number"
 	1    5750 3300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED_RGB D5
-U 1 1 5CE249B8
-P 6700 3350
-AR Path="/5CCF6F7E/5CE249B8" Ref="D5"  Part="1" 
-AR Path="/5D002D0B/5CE249B8" Ref="D5"  Part="1" 
-AR Path="/5D086332/5CE249B8" Ref="D?"  Part="1" 
-F 0 "D5" V 6746 3020 50  0000 R CNN
-F 1 "LED_RGB" V 6655 3020 50  0000 R CNN
-F 2 "" H 6700 3300 50  0001 C CNN
-F 3 "~" H 6700 3300 50  0001 C CNN
-	1    6700 3350
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -69,7 +56,7 @@ AR Path="/5D002D0B/5CE27928" Ref="J4"  Part="1"
 AR Path="/5D086332/5CE27928" Ref="J?"  Part="1" 
 F 0 "J4" H 3472 3482 50  0000 R CNN
 F 1 "Conn_01x04_Male" V 3250 3800 50  0000 R CNN
-F 2 "" H 3500 3600 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3500 3600 50  0001 C CNN
 F 3 "~" H 3500 3600 50  0001 C CNN
 	1    3500 3600
 	-1   0    0    1   
@@ -83,7 +70,7 @@ AR Path="/5D002D0B/5CE2B4D2" Ref="J5"  Part="1"
 AR Path="/5D086332/5CE2B4D2" Ref="J?"  Part="1" 
 F 0 "J5" H 3472 4032 50  0000 R CNN
 F 1 "Conn_01x04_Male" V 3250 4550 50  0000 R CNN
-F 2 "" H 3500 4150 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3500 4150 50  0001 C CNN
 F 3 "~" H 3500 4150 50  0001 C CNN
 	1    3500 4150
 	-1   0    0    1   
@@ -122,17 +109,6 @@ Text HLabel 6700 2700 1    50   Input ~ 10
 LED_G
 Text HLabel 6900 2700 1    50   Input ~ 10
 LED_B
-Wire Wire Line
-	6500 3700 6700 3700
-Wire Wire Line
-	6700 3700 6700 3550
-Wire Wire Line
-	6900 3550 6900 3700
-Wire Wire Line
-	6900 3700 6700 3700
-Connection ~ 6700 3700
-Wire Wire Line
-	6500 3550 6500 3700
 $Comp
 L power:GND #PWR017
 U 1 1 5CE2E82D
@@ -147,8 +123,6 @@ F 3 "" H 6700 3900 50  0001 C CNN
 	1    6700 3900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6700 3700 6700 3900
 $Comp
 L Device:R R?
 U 1 1 5CE394BD
@@ -159,7 +133,7 @@ AR Path="/5D002D0B/5CE394BD" Ref="R4"  Part="1"
 AR Path="/5D086332/5CE394BD" Ref="R?"  Part="1" 
 F 0 "R4" V 7000 2950 50  0000 L CNN
 F 1 "330" V 7000 2750 50  0000 L CNN
-F 2 "" V 6830 2950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6830 2950 50  0001 C CNN
 F 3 "~" H 6900 2950 50  0001 C CNN
 	1    6900 2950
 	1    0    0    -1  
@@ -174,7 +148,7 @@ AR Path="/5D002D0B/5CE394C3" Ref="R3"  Part="1"
 AR Path="/5D086332/5CE394C3" Ref="R?"  Part="1" 
 F 0 "R3" V 6600 2950 50  0000 L CNN
 F 1 "330" V 6600 2750 50  0000 L CNN
-F 2 "" V 6630 2950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6630 2950 50  0001 C CNN
 F 3 "~" H 6700 2950 50  0001 C CNN
 	1    6700 2950
 	1    0    0    -1  
@@ -189,17 +163,11 @@ AR Path="/5D002D0B/5CE394C9" Ref="R2"  Part="1"
 AR Path="/5D086332/5CE394C9" Ref="R?"  Part="1" 
 F 0 "R2" V 6400 2950 50  0000 L CNN
 F 1 "330" V 6400 2750 50  0000 L CNN
-F 2 "" V 6430 2950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6430 2950 50  0001 C CNN
 F 3 "~" H 6500 2950 50  0001 C CNN
 	1    6500 2950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6900 3150 6900 3100
-Wire Wire Line
-	6700 3150 6700 3100
-Wire Wire Line
-	6500 3150 6500 3100
 $Comp
 L power:GND #PWR016
 U 1 1 5CE3F7BF
@@ -227,7 +195,7 @@ AR Path="/5D002D0B/5CE5D9BC" Ref="J3"  Part="1"
 AR Path="/5D086332/5CE5D9BC" Ref="J?"  Part="1" 
 F 0 "J3" H 3472 2624 50  0000 R CNN
 F 1 "Conn_01x10_Male" V 3250 2950 50  0000 R CNN
-F 2 "" H 3500 2650 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 3500 2650 50  0001 C CNN
 F 3 "~" H 3500 2650 50  0001 C CNN
 	1    3500 2650
 	-1   0    0    -1  
@@ -313,7 +281,7 @@ AR Path="/5D002D0B/5CE41EFC" Ref="R5"  Part="1"
 AR Path="/5D086332/5CE41EFC" Ref="R?"  Part="1" 
 F 0 "R5" H 8170 3596 50  0000 L CNN
 F 1 "1K" H 8170 3505 50  0000 L CNN
-F 2 "" V 8030 3550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8030 3550 50  0001 C CNN
 F 3 "~" H 8100 3550 50  0001 C CNN
 	1    8100 3550
 	1    0    0    -1  
@@ -345,8 +313,9 @@ AR Path="/5D002D0B/5CE29D0F" Ref="RV1"  Part="1"
 AR Path="/5D086332/5CE29D0F" Ref="RV?"  Part="1" 
 F 0 "RV1" H 8031 3146 50  0000 R CNN
 F 1 "10K" H 8031 3055 50  0000 R CNN
-F 2 "" H 8100 3100 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 8100 3100 50  0001 C CNN
 F 3 "~" H 8100 3100 50  0001 C CNN
+F 4 "987-1305-ND" H 8100 3100 50  0001 C CNN "Part Number"
 	1    8100 3100
 	1    0    0    -1  
 $EndComp
@@ -356,4 +325,24 @@ Wire Wire Line
 	6700 2800 6700 2700
 Wire Wire Line
 	6900 2800 6900 2700
+$Comp
+L Device:LED_CRGB D5
+U 1 1 5CF74075
+P 6700 3500
+F 0 "D5" V 6746 3170 50  0000 R CNN
+F 1 "LED_CRGB" V 6655 3170 50  0000 R CNN
+F 2 "LED_SMD:LED_RGB_1210" H 6700 3450 50  0001 C CNN
+F 3 "~" H 6700 3450 50  0001 C CNN
+F 4 "	516-1778-6-ND" V 6700 3500 50  0001 C CNN "Part Number"
+	1    6700 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6500 3100 6500 3300
+Wire Wire Line
+	6700 3100 6700 3300
+Wire Wire Line
+	6900 3100 6900 3300
+Wire Wire Line
+	6700 3900 6700 3700
 $EndSCHEMATC
