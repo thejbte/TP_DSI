@@ -2705,8 +2705,8 @@
     )
   )
 
-  (gr_text JBN-DCI-CESE-2019 (at 137 97) (layer F.SilkS)
-    (effects (font (size 1.5 1.5) (thickness 0.3) italic))
+  (gr_text "JBN-DCI\nCESE-2019" (at 137 97) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.25) italic))
   )
   (dimension 83.82 (width 0.15) (layer Dwgs.User)
     (gr_text "83.820 mm" (at 129.288 78.316) (layer Dwgs.User)

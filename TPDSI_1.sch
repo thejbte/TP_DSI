@@ -29,20 +29,6 @@ F 4 "	399-14253-2-ND" H 3800 1600 50  0001 C CNN "Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
-U 1 1 5CDBB843
-P 4650 1600
-AR Path="/5CCF7078/5CDBB843" Ref="C?"  Part="1" 
-AR Path="/5CDBB843" Ref="C2"  Part="1" 
-F 0 "C2" H 4768 1646 50  0000 L CNN
-F 1 "22uF" H 4768 1555 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-20_Kemet-V" H 4688 1450 50  0001 C CNN
-F 3 "~" H 4650 1600 50  0001 C CNN
-F 4 "P16517DKR-ND" H 4650 1600 50  0001 C CNN "Part Number"
-	1    4650 1600
-	1    0    0    -1  
-$EndComp
-$Comp
 L TPDSI_1-rescue:TLV2217_TO252-3-J_ReguladorLinear U?
 U 1 1 5CDBB84A
 P 5750 1100
@@ -140,14 +126,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CDBB875
-P 3800 1900
+P 3800 2050
 AR Path="/5CCF7078/5CDBB875" Ref="#PWR?"  Part="1" 
 AR Path="/5CDBB875" Ref="#PWR0104"  Part="1" 
-F 0 "#PWR0104" H 3800 1650 50  0001 C CNN
-F 1 "GND" H 3805 1727 50  0000 C CNN
-F 2 "" H 3800 1900 50  0001 C CNN
-F 3 "" H 3800 1900 50  0001 C CNN
-	1    3800 1900
+F 0 "#PWR0104" H 3800 1800 50  0001 C CNN
+F 1 "GND" H 3805 1877 50  0000 C CNN
+F 2 "" H 3800 2050 50  0001 C CNN
+F 3 "" H 3800 2050 50  0001 C CNN
+	1    3800 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -201,7 +187,7 @@ P 3300 1200
 AR Path="/5CCF7078/5CDBB896" Ref="D?"  Part="1" 
 AR Path="/5CDBB896" Ref="D1"  Part="1" 
 F 0 "D1" H 3300 1416 50  0000 C CNN
-F 1 "D" H 3300 1325 50  0000 C CNN
+F 1 "1n4148" H 3300 1325 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 3300 1200 50  0001 C CNN
 F 3 "~" H 3300 1200 50  0001 C CNN
 F 4 "1N4148W-FDICT-ND" H 3300 1200 50  0001 C CNN "PArt Number"
@@ -228,8 +214,6 @@ F 4 "641-1985-1-ND" V 6900 1600 50  0001 C CNN "Part Number"
 $EndComp
 Wire Wire Line
 	3450 1200 3500 1200
-Wire Wire Line
-	3800 1750 3800 1900
 Connection ~ 4650 1200
 Wire Wire Line
 	4650 1200 4950 1200
@@ -293,8 +277,8 @@ Wire Wire Line
 Wire Wire Line
 	3500 1600 3500 1500
 Wire Wire Line
-	3500 1900 3800 1900
-Connection ~ 3800 1900
+	3500 2050 3800 2050
+Connection ~ 3800 2050
 $Comp
 L Device:D_TVS D?
 U 1 1 5CDBB8CD
@@ -712,8 +696,8 @@ $Comp
 L Connector:Screw_Terminal_01x02 J7
 U 1 1 5CF6B993
 P 2800 1300
-F 0 "J7" H 2718 975 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 2718 1066 50  0000 C CNN
+F 0 "J7" H 2800 1050 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" V 2950 1350 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2800 1300 50  0001 C CNN
 F 3 "~" H 2800 1300 50  0001 C CNN
 	1    2800 1300
@@ -722,45 +706,113 @@ $EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5CF85774
-P 10050 1000
-F 0 "H1" H 10150 1046 50  0000 L CNN
-F 1 "MountingHole" H 10150 955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10050 1000 50  0001 C CNN
-F 3 "~" H 10050 1000 50  0001 C CNN
-	1    10050 1000
+P 10200 1800
+F 0 "H1" H 10300 1846 50  0000 L CNN
+F 1 "MountingHole" H 10300 1755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10200 1800 50  0001 C CNN
+F 3 "~" H 10200 1800 50  0001 C CNN
+	1    10200 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5CF8F6CA
-P 10050 1300
-F 0 "H2" H 10150 1346 50  0000 L CNN
-F 1 "MountingHole" H 10150 1255 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10050 1300 50  0001 C CNN
-F 3 "~" H 10050 1300 50  0001 C CNN
-	1    10050 1300
+P 10200 2100
+F 0 "H2" H 10300 2146 50  0000 L CNN
+F 1 "MountingHole" H 10300 2055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10200 2100 50  0001 C CNN
+F 3 "~" H 10200 2100 50  0001 C CNN
+	1    10200 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5CF918E9
-P 10050 1600
-F 0 "H3" H 10150 1646 50  0000 L CNN
-F 1 "MountingHole" H 10150 1555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10050 1600 50  0001 C CNN
-F 3 "~" H 10050 1600 50  0001 C CNN
-	1    10050 1600
+P 10200 2400
+F 0 "H3" H 10300 2446 50  0000 L CNN
+F 1 "MountingHole" H 10300 2355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10200 2400 50  0001 C CNN
+F 3 "~" H 10200 2400 50  0001 C CNN
+	1    10200 2400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5CF93C5D
-P 10050 1850
-F 0 "H4" H 10150 1896 50  0000 L CNN
-F 1 "MountingHole" H 10150 1805 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10050 1850 50  0001 C CNN
-F 3 "~" H 10050 1850 50  0001 C CNN
-	1    10050 1850
+P 10200 2650
+F 0 "H4" H 10300 2696 50  0000 L CNN
+F 1 "MountingHole" H 10300 2605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10200 2650 50  0001 C CNN
+F 3 "~" H 10200 2650 50  0001 C CNN
+	1    10200 2650
+	1    0    0    -1  
+$EndComp
+Text Notes 4250 3400 0    157  ~ 31
+Hierarchy
+Wire Wire Line
+	3800 1750 3800 2050
+Wire Wire Line
+	3500 2050 3500 1900
+$Comp
+L Device:CP C?
+U 1 1 5CDBB843
+P 4650 1600
+AR Path="/5CCF7078/5CDBB843" Ref="C?"  Part="1" 
+AR Path="/5CDBB843" Ref="C2"  Part="1" 
+F 0 "C2" H 4400 1600 50  0000 L CNN
+F 1 "22uF" H 4400 1500 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-20_Kemet-V" H 4688 1450 50  0001 C CNN
+F 3 "~" H 4650 1600 50  0001 C CNN
+F 4 "P16517DKR-ND" H 4650 1600 50  0001 C CNN "Part Number"
+	1    4650 1600
+	1    0    0    -1  
+$EndComp
+Text Notes 7800 900  0    79   Italic 0
+Funcionamiento:\nFuente que regula una entrada\nde 9-12Vdc a 5Vdc y 3.3 Vdc
+Wire Notes Line
+	7400 750  7750 650 
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5D08E299
+P 10200 3150
+F 0 "FID1" H 10285 3196 50  0000 L CNN
+F 1 "Fiducial" H 10285 3105 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 10200 3150 50  0001 C CNN
+F 3 "~" H 10200 3150 50  0001 C CNN
+	1    10200 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5D08EA59
+P 10200 3400
+F 0 "FID2" H 10285 3446 50  0000 L CNN
+F 1 "Fiducial" H 10285 3355 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 10200 3400 50  0001 C CNN
+F 3 "~" H 10200 3400 50  0001 C CNN
+	1    10200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5D08F11A
+P 10200 3650
+F 0 "FID3" H 10285 3696 50  0000 L CNN
+F 1 "Fiducial" H 10285 3605 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 10200 3650 50  0001 C CNN
+F 3 "~" H 10200 3650 50  0001 C CNN
+	1    10200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID4
+U 1 1 5D08F54B
+P 10200 3900
+F 0 "FID4" H 10285 3946 50  0000 L CNN
+F 1 "Fiducial" H 10285 3855 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 10200 3900 50  0001 C CNN
+F 3 "~" H 10200 3900 50  0001 C CNN
+	1    10200 3900
 	1    0    0    -1  
 $EndComp
 Wire Bus Line

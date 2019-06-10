@@ -506,41 +506,6 @@ Text HLabel 7500 3800 2    50   Output ~ 10
 RC5
 Wire Wire Line
 	7500 3300 7850 3300
-$Comp
-L Connector:Conn_01x06_Male J6
-U 1 1 5CD0F49A
-P 2100 1450
-AR Path="/5CCEA06C/5CD0F49A" Ref="J6"  Part="1" 
-AR Path="/5CFF2911/5CD0F49A" Ref="J?"  Part="1" 
-AR Path="/5D021B48/5CD0F49A" Ref="J?"  Part="1" 
-AR Path="/5D0426A9/5CD0F49A" Ref="J6"  Part="1" 
-F 0 "J6" V 2254 1062 50  0000 R CNN
-F 1 "Conn_01x06_Male" H 2700 900 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 2100 1450 50  0001 C CNN
-F 3 "~" H 2100 1450 50  0001 C CNN
-	1    2100 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 1250 2500 1250
-Wire Wire Line
-	2300 1350 2500 1350
-Wire Wire Line
-	2300 1450 2500 1450
-Wire Wire Line
-	2300 1550 2500 1550
-Wire Wire Line
-	2500 1650 2300 1650
-Wire Wire Line
-	2300 1750 2500 1750
-Text Label 2500 1750 0    50   ~ 0
-PGM(LVP)
-Text Label 2500 1650 0    50   ~ 0
-PGC(ICSPCLK)
-Text Label 2500 1550 0    50   ~ 0
-PGD(ICSPDAT)
-Text Label 2500 1250 0    50   ~ 10
-MCLR_VPP
 Text Label 3700 5700 2    50   ~ 0
 PGD(ICSPDAT)
 Text Label 7600 5400 0    50   ~ 10
@@ -587,16 +552,6 @@ Wire Notes Line width 20
 	10750 800  10750 2200
 Text Notes 9450 2350 0    100  ~ 20
 User Button
-Text Notes 1450 2450 0    100  ~ 20
-Programming Connector ICSP
-Wire Notes Line width 20
-	3400 850  3400 2250
-Wire Notes Line width 20
-	1500 850  1500 2250
-Wire Notes Line width 20
-	3400 850  1500 850 
-Wire Notes Line width 20
-	1500 2250 3400 2250
 Text Notes 9500 4500 0    100  ~ 20
 Reset Button
 Wire Notes Line width 20
@@ -683,36 +638,6 @@ F 3 "" H 9850 1050 50  0001 C CNN
 	1    9850 1050
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VDD #PWR0114
-U 1 1 5CF4A32A
-P 2500 1350
-AR Path="/5CCEA06C/5CF4A32A" Ref="#PWR0114"  Part="1" 
-AR Path="/5CFF2911/5CF4A32A" Ref="#PWR?"  Part="1" 
-AR Path="/5D021B48/5CF4A32A" Ref="#PWR?"  Part="1" 
-AR Path="/5D0426A9/5CF4A32A" Ref="#PWR011"  Part="1" 
-F 0 "#PWR011" H 2500 1200 50  0001 C CNN
-F 1 "VDD" V 2500 1550 50  0000 C CNN
-F 2 "" H 2500 1350 50  0001 C CNN
-F 3 "" H 2500 1350 50  0001 C CNN
-	1    2500 1350
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0115
-U 1 1 5CF4CE26
-P 2500 1450
-AR Path="/5CCEA06C/5CF4CE26" Ref="#PWR0115"  Part="1" 
-AR Path="/5CFF2911/5CF4CE26" Ref="#PWR?"  Part="1" 
-AR Path="/5D021B48/5CF4CE26" Ref="#PWR?"  Part="1" 
-AR Path="/5D0426A9/5CF4CE26" Ref="#PWR012"  Part="1" 
-F 0 "#PWR012" H 2500 1200 50  0001 C CNN
-F 1 "GND" V 2500 1250 50  0000 C CNN
-F 2 "" H 2500 1450 50  0001 C CNN
-F 3 "" H 2500 1450 50  0001 C CNN
-	1    2500 1450
-	0    -1   -1   0   
-$EndComp
 NoConn ~ 3900 4200
 Wire Wire Line
 	5700 2550 5800 2550
@@ -721,7 +646,6 @@ Wire Wire Line
 Connection ~ 5800 2550
 Wire Wire Line
 	5800 2550 6050 2550
-NoConn ~ 2500 1750
 Wire Wire Line
 	5550 2550 5700 2550
 $Comp
@@ -741,8 +665,6 @@ F 3 "" H 9850 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9850 4800 9850 5050
-Wire Wire Line
-	5700 5800 5700 6050
 $Comp
 L power:GND #PWR0121
 U 1 1 5CFAAFFE
@@ -762,4 +684,84 @@ Wire Wire Line
 	5800 5800 5850 5800
 Wire Wire Line
 	5850 5800 5850 6050
+Wire Wire Line
+	5700 5800 5700 6050
+Text Notes 4250 1450 0    79   Italic 0
+Funcionamiento:\nMicrocontrolador con sus respectivas entradas y alimentaciones.\nConector para programación, Botón para interacción del usuario\nBotón para reset del microcontrolador.
+NoConn ~ 2100 1750
+$Comp
+L power:GND #PWR0115
+U 1 1 5CF4CE26
+P 2100 1450
+AR Path="/5CCEA06C/5CF4CE26" Ref="#PWR0115"  Part="1" 
+AR Path="/5CFF2911/5CF4CE26" Ref="#PWR?"  Part="1" 
+AR Path="/5D021B48/5CF4CE26" Ref="#PWR?"  Part="1" 
+AR Path="/5D0426A9/5CF4CE26" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 2100 1200 50  0001 C CNN
+F 1 "GND" V 2100 1250 50  0000 C CNN
+F 2 "" H 2100 1450 50  0001 C CNN
+F 3 "" H 2100 1450 50  0001 C CNN
+	1    2100 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VDD #PWR0114
+U 1 1 5CF4A32A
+P 2100 1350
+AR Path="/5CCEA06C/5CF4A32A" Ref="#PWR0114"  Part="1" 
+AR Path="/5CFF2911/5CF4A32A" Ref="#PWR?"  Part="1" 
+AR Path="/5D021B48/5CF4A32A" Ref="#PWR?"  Part="1" 
+AR Path="/5D0426A9/5CF4A32A" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 2100 1200 50  0001 C CNN
+F 1 "VDD" V 2100 1550 50  0000 C CNN
+F 2 "" H 2100 1350 50  0001 C CNN
+F 3 "" H 2100 1350 50  0001 C CNN
+	1    2100 1350
+	0    1    1    0   
+$EndComp
+Wire Notes Line width 20
+	1100 2250 3000 2250
+Wire Notes Line width 20
+	3000 850  1100 850 
+Wire Notes Line width 20
+	1100 850  1100 2250
+Wire Notes Line width 20
+	3000 850  3000 2250
+Text Notes 1050 2450 0    100  ~ 20
+Programming Connector ICSP
+Text Label 2100 1250 0    50   ~ 10
+MCLR_VPP
+Text Label 2100 1550 0    50   ~ 0
+PGD(ICSPDAT)
+Text Label 2100 1650 0    50   ~ 0
+PGC(ICSPCLK)
+Text Label 2100 1750 0    50   ~ 0
+PGM(LVP)
+Wire Wire Line
+	1900 1750 2100 1750
+Wire Wire Line
+	2100 1650 1900 1650
+Wire Wire Line
+	1900 1550 2100 1550
+Wire Wire Line
+	1900 1450 2100 1450
+Wire Wire Line
+	1900 1350 2100 1350
+Wire Wire Line
+	1900 1250 2100 1250
+$Comp
+L Connector:Conn_01x06_Male J6
+U 1 1 5CD0F49A
+P 1700 1450
+AR Path="/5CCEA06C/5CD0F49A" Ref="J6"  Part="1" 
+AR Path="/5CFF2911/5CD0F49A" Ref="J?"  Part="1" 
+AR Path="/5D021B48/5CD0F49A" Ref="J?"  Part="1" 
+AR Path="/5D0426A9/5CD0F49A" Ref="J6"  Part="1" 
+F 0 "J6" V 1854 1062 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 2300 900 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 1700 1450 50  0001 C CNN
+F 3 "~" H 1700 1450 50  0001 C CNN
+	1    1700 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
