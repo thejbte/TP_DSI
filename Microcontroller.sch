@@ -63,8 +63,6 @@ F 3 "" H 6500 2550 50  0001 C CNN
 	1    6500 2550
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6350 2550 6500 2550
 $Comp
 L Device:Crystal Y1
 U 1 1 5CD3F734
@@ -198,8 +196,6 @@ $EndComp
 Wire Wire Line
 	5700 2300 5700 2550
 Connection ~ 5700 2550
-Wire Wire Line
-	5700 2550 5700 3000
 $Comp
 L Device:C C7
 U 1 1 5CD3BBDB
@@ -336,20 +332,18 @@ $EndComp
 $Comp
 L power:GND #PWR013
 U 1 1 5CD587E3
-P 9850 1900
+P 9850 2000
 AR Path="/5CCEA06C/5CD587E3" Ref="#PWR013"  Part="1" 
 AR Path="/5CFF2911/5CD587E3" Ref="#PWR?"  Part="1" 
 AR Path="/5D021B48/5CD587E3" Ref="#PWR?"  Part="1" 
 AR Path="/5D0426A9/5CD587E3" Ref="#PWR026"  Part="1" 
-F 0 "#PWR026" H 9850 1650 50  0001 C CNN
-F 1 "GND" H 9855 1727 50  0000 C CNN
-F 2 "" H 9850 1900 50  0001 C CNN
-F 3 "" H 9850 1900 50  0001 C CNN
-	1    9850 1900
+F 0 "#PWR026" H 9850 1750 50  0001 C CNN
+F 1 "GND" H 9855 1827 50  0000 C CNN
+F 2 "" H 9850 2000 50  0001 C CNN
+F 3 "" H 9850 2000 50  0001 C CNN
+	1    9850 2000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9850 1850 9850 1900
 Text Label 10000 1550 0    50   ~ 10
 USER_BUTTON
 Wire Wire Line
@@ -469,21 +463,6 @@ Text HLabel 7500 3700 2    50   BiDi ~ 10
 SCL_I2C
 Text HLabel 7850 3300 2    50   Output ~ 10
 LED_OUT
-$Comp
-L MCU_Microchip_PIC16:PIC16F1939-IPT U2
-U 1 1 5CCEA30F
-P 5700 4400
-AR Path="/5CCEA06C/5CCEA30F" Ref="U2"  Part="1" 
-AR Path="/5CFF2911/5CCEA30F" Ref="U?"  Part="1" 
-AR Path="/5D021B48/5CCEA30F" Ref="U?"  Part="1" 
-AR Path="/5D0426A9/5CCEA30F" Ref="U2"  Part="1" 
-F 0 "U2" H 7250 5800 50  0000 C CNN
-F 1 "PIC16F1939-IPT" H 7000 5700 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 5700 4400 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41364E.pdf" H 5700 4400 50  0001 C CNN
-	1    5700 4400
-	1    0    0    -1  
-$EndComp
 Text HLabel 3700 5550 0    50   Output ~ 10
 RB7
 Text HLabel 3700 5300 0    50   Output ~ 10
@@ -763,5 +742,54 @@ F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 1700 1450 50 
 F 3 "~" H 1700 1450 50  0001 C CNN
 	1    1700 1450
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 1850 9850 2000
+$Comp
+L MCU_Microchip_PIC16_Updtate:PIC16F1934-IPT_J U2
+U 1 1 5D05B785
+P 5700 4400
+F 0 "U2" H 7300 5700 50  0000 C CNN
+F 1 "PIC16F1934-IPT_J" H 4400 5700 50  0000 C CNN
+F 2 "" H 5700 4400 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41364E.pdf" H 5700 4400 50  0001 C CNN
+	1    5700 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2550 6500 2550
+Wire Wire Line
+	6350 2550 6400 2550
+Connection ~ 6400 2550
+Wire Wire Line
+	6400 2700 6400 2550
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5D04333F
+P 6400 2700
+F 0 "#FLG0102" H 6400 2775 50  0001 C CNN
+F 1 "PWR_FLAG" H 6400 2873 50  0000 C CNN
+F 2 "" H 6400 2700 50  0001 C CNN
+F 3 "~" H 6400 2700 50  0001 C CNN
+	1    6400 2700
+	-1   0    0    1   
+$EndComp
+Connection ~ 5700 2750
+Wire Wire Line
+	5700 2750 5700 3000
+Wire Wire Line
+	5700 2550 5700 2750
+Wire Wire Line
+	5550 2750 5700 2750
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D032492
+P 5550 2750
+F 0 "#FLG0101" H 5550 2825 50  0001 C CNN
+F 1 "PWR_FLAG" V 5550 2877 50  0000 L CNN
+F 2 "" H 5550 2750 50  0001 C CNN
+F 3 "~" H 5550 2750 50  0001 C CNN
+	1    5550 2750
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

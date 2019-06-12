@@ -141,8 +141,6 @@ Wire Wire Line
 Wire Wire Line
 	4650 1900 4650 1850
 Wire Wire Line
-	4500 1200 4650 1200
-Wire Wire Line
 	4650 1200 4650 1450
 Wire Wire Line
 	5650 1200 5450 1200
@@ -161,19 +159,6 @@ F 1 "GND" H 5955 1477 50  0000 C CNN
 F 2 "" H 5950 1650 50  0001 C CNN
 F 3 "" H 5950 1650 50  0001 C CNN
 	1    5950 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CDBB888
-P 4200 1700
-AR Path="/5CCF7078/5CDBB888" Ref="#PWR?"  Part="1" 
-AR Path="/5CDBB888" Ref="#PWR0106"  Part="1" 
-F 0 "#PWR0106" H 4200 1450 50  0001 C CNN
-F 1 "GND" H 4205 1527 50  0000 C CNN
-F 2 "" H 4200 1700 50  0001 C CNN
-F 3 "" H 4200 1700 50  0001 C CNN
-	1    4200 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -216,14 +201,12 @@ Wire Wire Line
 	3450 1200 3500 1200
 Connection ~ 4650 1200
 Wire Wire Line
-	4650 1200 4950 1200
-Wire Wire Line
 	4950 1450 4950 1200
 Connection ~ 4950 1200
 Wire Wire Line
 	4950 1750 4950 1850
 Wire Wire Line
-	4950 1850 4650 1850
+	4950 1850 4900 1850
 Connection ~ 4650 1850
 Wire Wire Line
 	4650 1850 4650 1750
@@ -235,8 +218,6 @@ Wire Wire Line
 	6400 1750 6400 1850
 Wire Wire Line
 	6250 1200 6400 1200
-Wire Wire Line
-	6400 1200 6900 1200
 Connection ~ 6400 1200
 Wire Wire Line
 	6400 1850 6900 1850
@@ -813,6 +794,30 @@ F 1 "Fiducial" H 10285 3855 50  0000 L CNN
 F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 10200 3900 50  0001 C CNN
 F 3 "~" H 10200 3900 50  0001 C CNN
 	1    10200 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1900 4900 1850
+Connection ~ 4900 1850
+Wire Wire Line
+	4900 1850 4650 1850
+Wire Wire Line
+	4500 1200 4650 1200
+Wire Wire Line
+	6400 1200 6900 1200
+Wire Wire Line
+	4650 1200 4950 1200
+$Comp
+L power:GND #PWR?
+U 1 1 5CDBB888
+P 4200 1700
+AR Path="/5CCF7078/5CDBB888" Ref="#PWR?"  Part="1" 
+AR Path="/5CDBB888" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 4200 1450 50  0001 C CNN
+F 1 "GND" H 4205 1527 50  0000 C CNN
+F 2 "" H 4200 1700 50  0001 C CNN
+F 3 "" H 4200 1700 50  0001 C CNN
+	1    4200 1700
 	1    0    0    -1  
 $EndComp
 Wire Bus Line
