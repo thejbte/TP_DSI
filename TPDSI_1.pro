@@ -1,4 +1,4 @@
-update=12/06/2019 8:47:01 a.m.
+update=19/06/2019 8:19:01 p.m.
 version=1
 last_client=kicad
 [general]
@@ -244,6 +244,17 @@ Enabled=0
 [pcbnew/Netclasses/Default]
 Name=Default
 Clearance=0.2
+TrackWidth=0.254
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.254
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=analogica
+Clearance=0.508
 TrackWidth=0.254
 ViaDiameter=0.8
 ViaDrill=0.4
