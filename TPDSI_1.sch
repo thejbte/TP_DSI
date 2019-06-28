@@ -80,7 +80,7 @@ F 0 "C4" H 6518 1646 50  0000 L CNN
 F 1 "10uF" H 6518 1555 50  0000 L CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-20_Kemet-V" H 6438 1450 50  0001 C CNN
 F 3 "~" H 6400 1600 50  0001 C CNN
-F 4 "399-16038-1-ND" H 6400 1600 50  0001 C CNN "Part number"
+F 4 "399-16038-1-ND" H 6400 1600 50  0001 C CNN "Part Number"
 	1    6400 1600
 	1    0    0    -1  
 $EndComp
@@ -175,7 +175,7 @@ F 0 "D1" H 3300 1416 50  0000 C CNN
 F 1 "1n4148" H 3300 1325 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 3300 1200 50  0001 C CNN
 F 3 "~" H 3300 1200 50  0001 C CNN
-F 4 "1N4148W-FDICT-ND" H 3300 1200 50  0001 C CNN "PArt Number"
+F 4 "1N4148W-FDICT-ND" H 3300 1200 50  0001 C CNN "Part Number"
 	1    3300 1200
 	-1   0    0    -1  
 $EndComp
@@ -205,8 +205,6 @@ Wire Wire Line
 Connection ~ 4950 1200
 Wire Wire Line
 	4950 1750 4950 1850
-Wire Wire Line
-	4950 1850 4900 1850
 Connection ~ 4650 1850
 Wire Wire Line
 	4650 1850 4650 1750
@@ -797,11 +795,6 @@ F 3 "~" H 10200 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 1900 4900 1850
-Connection ~ 4900 1850
-Wire Wire Line
-	4900 1850 4650 1850
-Wire Wire Line
 	4500 1200 4650 1200
 Wire Wire Line
 	6400 1200 6900 1200
@@ -828,4 +821,6 @@ Wire Bus Line
 	5150 4250 5150 5250
 Wire Bus Line
 	4050 4250 4050 5250
+Wire Wire Line
+	4650 1850 4950 1850
 $EndSCHEMATC
