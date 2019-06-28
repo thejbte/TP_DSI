@@ -751,17 +751,6 @@ Funcionamiento:\nFuente que regula una entrada\nde 9-12Vdc a 5Vdc y 3.3 Vdc
 Wire Notes Line
 	7400 750  7750 650 
 $Comp
-L Mechanical:Fiducial FID1
-U 1 1 5D08E299
-P 10200 3150
-F 0 "FID1" H 10285 3196 50  0000 L CNN
-F 1 "Fiducial" H 10285 3105 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 10200 3150 50  0001 C CNN
-F 3 "~" H 10200 3150 50  0001 C CNN
-	1    10200 3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:Fiducial FID2
 U 1 1 5D08EA59
 P 10200 3400
@@ -813,6 +802,19 @@ F 3 "" H 4200 1700 50  0001 C CNN
 	1    4200 1700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4650 1850 4950 1850
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5D17EB26
+P 10200 3150
+F 0 "FID1" H 10285 3196 50  0000 L CNN
+F 1 "Fiducial" H 10285 3105 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 10200 3150 50  0001 C CNN
+F 3 "~" H 10200 3150 50  0001 C CNN
+	1    10200 3150
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	4050 3750 4050 4050
 Wire Bus Line
@@ -821,6 +823,4 @@ Wire Bus Line
 	5150 4250 5150 5250
 Wire Bus Line
 	4050 4250 4050 5250
-Wire Wire Line
-	4650 1850 4950 1850
 $EndSCHEMATC
