@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 45)
+    (drawings 46)
     (tracks 763)
     (zones 0)
     (modules 63)
@@ -22,10 +22,10 @@
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
-    (32 B.Adhes user)
-    (33 F.Adhes user)
-    (34 B.Paste user)
-    (35 F.Paste user)
+    (32 B.Adhes user hide)
+    (33 F.Adhes user hide)
+    (34 B.Paste user hide)
+    (35 F.Paste user hide)
     (36 B.SilkS user)
     (37 F.SilkS user)
     (38 B.Mask user)
@@ -2798,6 +2798,9 @@
     )
   )
 
+  (gr_text "FR4 -1.6cm -35micras" (at 29.5 68.468) (layer Eco1.User) (tstamp 5D17C44D)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_text "POT ANG" (at 138.176 120.65) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -2922,7 +2925,7 @@
   (gr_line (start 192 124) (end 107 124) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 192 61.5) (end 192 124) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 107 61.5) (end 192 61.5) (layer Edge.Cuts) (width 0.05))
-  (gr_text "*Colocar tented a las vias en la fabricación\n*Terminación HASL\n*Fabricante criterios dimención :\n https://www.colcircuitos.com/wp-content/uploads/2017/08/REQUERIMIENTOS-MINIMOS-FE-2017.pdf" (at 20.038 87) (layer Eco1.User) (tstamp 5D150BDC)
+  (gr_text "*Colocar tented a las vias en la fabricación\n*Terminación HASL\n*Fabricante criterios dimensión :\n https://www.colcircuitos.com/wp-content/uploads/2017/08/\n REQUERIMIENTOS-MINIMOS-FE-2017.pdf" (at 20.038 87) (layer Eco1.User) (tstamp 5D150BDC)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
   (gr_text "*Capas 2\n*Ancho de pista 0.254 mm\n*Clearence 0.254 mm keep out circular\n*Diametro via 0.8mm\n*Tdro via 0.4mm\n*Clearence planos 0.5 mm\n\n" (at 20.038 79.2828) (layer Eco1.User) (tstamp 5D005DB5)

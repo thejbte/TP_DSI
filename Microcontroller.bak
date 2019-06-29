@@ -25,7 +25,8 @@ AR Path="/5D0426A9/5CD38D50" Ref="JP1"  Part="1"
 F 0 "JP1" H 5700 2439 50  0000 C CNN
 F 1 "Jumper_NC_Dual" H 5700 2550 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5700 2200 50  0001 C CNN
-F 3 "~" H 5700 2200 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/D01-992.pdf" H 5700 2200 50  0001 C CNN
+F 4 "952-2521-ND" H 5700 2200 50  0001 C CNN " Part Number"
 	1    5700 2200
 	1    0    0    -1  
 $EndComp
@@ -74,7 +75,8 @@ AR Path="/5D0426A9/5CD3F734" Ref="Y1"  Part="1"
 F 0 "Y1" V 2646 4319 50  0000 R CNN
 F 1 "Crystal" V 2555 4319 50  0000 R CNN
 F 2 "Crystal:Crystal_HC18-U_Vertical" H 2600 4450 50  0001 C CNN
-F 3 "~" H 2600 4450 50  0001 C CNN
+F 3 "~http://www.ecsxtal.com/store/pdf/CSM-3X.pdf" H 2600 4450 50  0001 C CNN
+F 4 "XC1776TR-ND" H 2600 4450 50  0001 C CNN " Part Number"
 	1    2600 4450
 	0    -1   -1   0   
 $EndComp
@@ -89,8 +91,8 @@ AR Path="/5D0426A9/5CD415AC" Ref="C5"  Part="1"
 F 0 "C5" V 2652 4250 50  0000 C CNN
 F 1 "22pF" V 2561 4250 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2438 4100 50  0001 C CNN
-F 3 "~" H 2400 4250 50  0001 C CNN
-F 4 "732-7748-1-ND" V 2400 4250 50  0001 C CNN "Part Number"
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 2400 4250 50  0001 C CNN
+F 4 "732-7748-1-ND" H 2400 4250 50  0001 C CNN " Part Number"
 	1    2400 4250
 	0    -1   -1   0   
 $EndComp
@@ -105,8 +107,8 @@ AR Path="/5D0426A9/5CD42B0F" Ref="C6"  Part="1"
 F 0 "C6" V 2652 4700 50  0000 C CNN
 F 1 "22pF" V 2561 4700 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2438 4550 50  0001 C CNN
-F 3 "~" H 2400 4700 50  0001 C CNN
-F 4 "732-7748-1-ND" V 2400 4700 50  0001 C CNN "Part Number"
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 2400 4700 50  0001 C CNN
+F 4 "732-7748-1-ND" H 2400 4700 50  0001 C CNN " Part Number"
 	1    2400 4700
 	0    -1   -1   0   
 $EndComp
@@ -173,8 +175,8 @@ AR Path="/5D0426A9/5CD474C2" Ref="SW2"  Part="1"
 F 0 "SW2" H 9350 5685 50  0000 C CNN
 F 1 "SW_Push" H 9350 5594 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 9350 5600 50  0001 C CNN
-F 3 "~" H 9350 5600 50  0001 C CNN
-F 4 "450-1804-ND" H 9350 5400 50  0001 C CNN "Part Number"
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 9350 5600 50  0001 C CNN
+F 4 "450-1804-ND" H 9350 5400 50  0001 C CNN " Part Number"
 	1    9350 5400
 	1    0    0    -1  
 $EndComp
@@ -189,7 +191,8 @@ AR Path="/5D0426A9/5CD4C18B" Ref="R10"  Part="1"
 F 0 "R10" H 9920 5246 50  0000 L CNN
 F 1 "10K" H 9920 5155 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9780 5200 50  0001 C CNN
-F 3 "~" H 9850 5200 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/chip-resistor/__icsFiles/afieldfile/2019/01/21/RC_Spec_Sheet(1901).pdf" H 9850 5200 50  0001 C CNN
+F 4 "1276-3485-2-ND" H 9850 5200 50  0001 C CNN " Part Number"
 	1    9850 5200
 	1    0    0    -1  
 $EndComp
@@ -207,8 +210,9 @@ AR Path="/5D0426A9/5CD3BBDB" Ref="C7"  Part="1"
 F 0 "C7" V 5948 2550 50  0000 C CNN
 F 1 "0.1uF" V 6039 2550 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6238 2400 50  0001 C CNN
-F 3 "~" H 6200 2550 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 6200 2550 50  0001 C CNN
 F 4 "732-7939-1-ND" V 6200 2550 50  0001 C CNN "Part Number"
+F 5 "399-1282-2-ND" H 6200 2550 50  0001 C CNN " Part Number"
 	1    6200 2550
 	0    1    1    0   
 $EndComp
@@ -245,7 +249,8 @@ AR Path="/5D0426A9/5CD553E2" Ref="R11"  Part="1"
 F 0 "R11" H 9920 5596 50  0000 L CNN
 F 1 "DNP-10K" H 9920 5505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9780 5550 50  0001 C CNN
-F 3 "~" H 9850 5550 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/chip-resistor/__icsFiles/afieldfile/2019/01/21/RC_Spec_Sheet(1901).pdf" H 9850 5550 50  0001 C CNN
+F 4 "1276-3485-2-ND" H 9850 5550 50  0001 C CNN " Part Number"
 	1    9850 5550
 	1    0    0    -1  
 $EndComp
@@ -277,8 +282,8 @@ AR Path="/5D0426A9/5CD587B3" Ref="SW1"  Part="1"
 F 0 "SW1" H 9350 1835 50  0000 C CNN
 F 1 "SW_Push" H 9350 1744 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 9350 1750 50  0001 C CNN
-F 3 "~" H 9350 1750 50  0001 C CNN
-F 4 "450-1804-ND" H 9350 1550 50  0001 C CNN "Part Number"
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 9350 1750 50  0001 C CNN
+F 4 "450-1804-ND" H 9350 1550 50  0001 C CNN " Part Number"
 	1    9350 1550
 	1    0    0    -1  
 $EndComp
@@ -293,7 +298,8 @@ AR Path="/5D0426A9/5CD587BD" Ref="R8"  Part="1"
 F 0 "R8" H 9920 1396 50  0000 L CNN
 F 1 "10K" H 9920 1305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9780 1350 50  0001 C CNN
-F 3 "~" H 9850 1350 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/chip-resistor/__icsFiles/afieldfile/2019/01/21/RC_Spec_Sheet(1901).pdf" H 9850 1350 50  0001 C CNN
+F 4 "1276-3485-2-ND" H 9850 1350 50  0001 C CNN " Part Number"
 	1    9850 1350
 	1    0    0    -1  
 $EndComp
@@ -325,7 +331,8 @@ AR Path="/5D0426A9/5CD587D9" Ref="R9"  Part="1"
 F 0 "R9" H 9920 1746 50  0000 L CNN
 F 1 "DNP-10K" H 9920 1655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9780 1700 50  0001 C CNN
-F 3 "~" H 9850 1700 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/chip-resistor/__icsFiles/afieldfile/2019/01/21/RC_Spec_Sheet(1901).pdf" H 9850 1700 50  0001 C CNN
+F 4 "1276-3485-2-ND" H 9850 1700 50  0001 C CNN " Part Number"
 	1    9850 1700
 	1    0    0    -1  
 $EndComp
@@ -392,7 +399,8 @@ AR Path="/5D0426A9/5CD7750C" Ref="R6"  Part="1"
 F 0 "R6" V 8050 3950 50  0000 L CNN
 F 1 "470" V 8050 3700 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7880 3900 50  0001 C CNN
-F 3 "~" H 7950 3900 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 7950 3900 50  0001 C CNN
+F 4 "P470DBTR-ND" H 7950 3900 50  0001 C CNN " Part Number"
 	1    7950 3900
 	0    -1   -1   0   
 $EndComp
@@ -407,7 +415,8 @@ AR Path="/5D0426A9/5CD6FD8F" Ref="R7"  Part="1"
 F 0 "R7" V 7850 4000 50  0000 L CNN
 F 1 "470" V 7850 3800 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7880 4000 50  0001 C CNN
-F 3 "~" H 7950 4000 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 7950 4000 50  0001 C CNN
+F 4 "P470DBTR-ND" H 7950 4000 50  0001 C CNN " Part Number"
 	1    7950 4000
 	0    -1   -1   0   
 $EndComp
@@ -739,7 +748,8 @@ AR Path="/5D0426A9/5CD0F49A" Ref="J6"  Part="1"
 F 0 "J6" V 1854 1062 50  0000 R CNN
 F 1 "Conn_01x06_Male" H 2300 900 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 1700 1450 50  0001 C CNN
-F 3 "~" H 1700 1450 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/D01-992.pdf" H 1700 1450 50  0001 C CNN
+F 4 "952-2521-ND" H 1700 1450 50  0001 C CNN " Part Number"
 	1    1700 1450
 	1    0    0    -1  
 $EndComp
@@ -753,8 +763,9 @@ AR Path="/5D05B785" Ref="U2"  Part="1"
 AR Path="/5D0426A9/5D05B785" Ref="U2"  Part="1" 
 F 0 "U2" H 7300 5700 50  0000 C CNN
 F 1 "PIC16F1934-IPT_J" H 4400 5700 50  0000 C CNN
-F 2 "" H 5700 4400 50  0001 C CNN
+F 2 "package_TQFP" H 5700 4400 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41364E.pdf" H 5700 4400 50  0001 C CNN
+F 4 "PIC16F1934-I/PT-ND" H 5700 4400 50  0001 C CNN " Part Number"
 	1    5700 4400
 	1    0    0    -1  
 $EndComp

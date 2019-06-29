@@ -27,7 +27,8 @@ AR Path="/5D086332/5CE24118" Ref="R?"  Part="1"
 F 0 "R1" H 5870 3696 50  0000 L CNN
 F 1 "330" H 5870 3605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5730 3650 50  0001 C CNN
-F 3 "~" H 5800 3650 50  0001 C CNN
+F 3 "https://www.rohm.com/datasheet/KTR03EZPF/ktr-e" H 5800 3650 50  0001 C CNN
+F 4 "RHM330AZCT-ND" H 5800 3650 50  0001 C CNN " Part Number"
 	1    5800 3650
 	1    0    0    -1  
 $EndComp
@@ -42,8 +43,9 @@ AR Path="/5D086332/5CE2411E" Ref="D?"  Part="1"
 F 0 "D4" V 5839 3933 50  0000 R CNN
 F 1 "LED" V 5748 3933 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 5800 4050 50  0001 C CNN
-F 3 "~" H 5800 4050 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-228/LTST-C191KGKT.PDF" H 5800 4050 50  0001 C CNN
 F 4 "160-1447-1-ND" V 5800 4050 50  0001 C CNN "Part number"
+F 5 "160-1446-6-ND" H 5800 4050 50  0001 C CNN " Part Number"
 	1    5800 4050
 	0    -1   -1   0   
 $EndComp
@@ -57,7 +59,8 @@ AR Path="/5D086332/5CE27928" Ref="J?"  Part="1"
 F 0 "J4" H 3522 4882 50  0000 R CNN
 F 1 "Conn_01x04_Male" V 3300 5200 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3550 5000 50  0001 C CNN
-F 3 "~" H 3550 5000 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/D01-992.pdf" H 3550 5000 50  0001 C CNN
+F 4 "952-2521-ND" H 3550 5000 50  0001 C CNN " Part Number"
 	1    3550 5000
 	-1   0    0    1   
 $EndComp
@@ -71,7 +74,8 @@ AR Path="/5D086332/5CE2B4D2" Ref="J?"  Part="1"
 F 0 "J5" H 3872 3382 50  0000 R CNN
 F 1 "Conn_01x04_Male" V 3650 3900 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3900 3500 50  0001 C CNN
-F 3 "~" H 3900 3500 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/D01-992.pdf" H 3900 3500 50  0001 C CNN
+F 4 "952-2521-ND" H 3900 3500 50  0001 C CNN " Part Number"
 	1    3900 3500
 	-1   0    0    1   
 $EndComp
@@ -120,7 +124,8 @@ AR Path="/5D086332/5CE394BD" Ref="R?"  Part="1"
 F 0 "R4" V 7050 3700 50  0000 L CNN
 F 1 "330" V 7050 3500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6880 3700 50  0001 C CNN
-F 3 "~" H 6950 3700 50  0001 C CNN
+F 3 "https://www.rohm.com/datasheet/KTR03EZPF/ktr-e" H 6950 3700 50  0001 C CNN
+F 4 "RHM330AZCT-ND" H 6950 3700 50  0001 C CNN " Part Number"
 	1    6950 3700
 	1    0    0    -1  
 $EndComp
@@ -135,7 +140,8 @@ AR Path="/5D086332/5CE394C3" Ref="R?"  Part="1"
 F 0 "R3" V 6650 3700 50  0000 L CNN
 F 1 "330" V 6650 3500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6680 3700 50  0001 C CNN
-F 3 "~" H 6750 3700 50  0001 C CNN
+F 3 "https://www.rohm.com/datasheet/KTR03EZPF/ktr-e" H 6750 3700 50  0001 C CNN
+F 4 "RHM330AZCT-ND" H 6750 3700 50  0001 C CNN " Part Number"
 	1    6750 3700
 	1    0    0    -1  
 $EndComp
@@ -150,7 +156,8 @@ AR Path="/5D086332/5CE394C9" Ref="R?"  Part="1"
 F 0 "R2" V 6450 3700 50  0000 L CNN
 F 1 "330" V 6450 3500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6480 3700 50  0001 C CNN
-F 3 "~" H 6550 3700 50  0001 C CNN
+F 3 "https://www.rohm.com/datasheet/KTR03EZPF/ktr-e" H 6550 3700 50  0001 C CNN
+F 4 "RHM330AZCT-ND" H 6550 3700 50  0001 C CNN " Part Number"
 	1    6550 3700
 	1    0    0    -1  
 $EndComp
@@ -182,7 +189,8 @@ AR Path="/5D086332/5CE5D9BC" Ref="J?"  Part="1"
 F 0 "J3" H 3872 2474 50  0000 R CNN
 F 1 "Conn_01x10_Male" V 3650 2800 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 3900 2500 50  0001 C CNN
-F 3 "~" H 3900 2500 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/D01-992.pdf" H 3900 2500 50  0001 C CNN
+F 4 "952-2521-ND" H 3900 2500 50  0001 C CNN " Part Number"
 	1    3900 2500
 	-1   0    0    -1  
 $EndComp
@@ -252,7 +260,8 @@ AR Path="/5D086332/5CE41EFC" Ref="R?"  Part="1"
 F 0 "R5" H 8570 4396 50  0000 L CNN
 F 1 "1K" H 8570 4305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8430 4350 50  0001 C CNN
-F 3 "~" H 8500 4350 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 8500 4350 50  0001 C CNN
+F 4 "P1.00KHDKR-ND" H 8500 4350 50  0001 C CNN " Part Number"
 	1    8500 4350
 	1    0    0    -1  
 $EndComp
@@ -284,8 +293,8 @@ AR Path="/5D086332/5CE29D0F" Ref="RV?"  Part="1"
 F 0 "RV1" H 8431 3946 50  0000 R CNN
 F 1 "10K" H 8431 3855 50  0000 R CNN
 F 2 "Potentiometer_SMD:Potentiometer_ACP_CA6-VSMD_Vertical" H 8500 3900 50  0001 C CNN
-F 3 "~" H 8500 3900 50  0001 C CNN
-F 4 "987-1305-ND" H 8500 3900 50  0001 C CNN "Part Number"
+F 3 "https://www.ttelectronics.com/TTElectronics/media/ProductFiles/Potentiometers/Datasheets/P160.pdf" H 8500 3900 50  0001 C CNN
+F 4 "987-1305-ND" H 8500 3900 50  0001 C CNN " Part Number"
 	1    8500 3900
 	1    0    0    -1  
 $EndComp
@@ -302,8 +311,8 @@ P 6750 4250
 F 0 "D5" V 6796 3920 50  0000 R CNN
 F 1 "LED_CRGB" V 6705 3920 50  0000 R CNN
 F 2 "LED_SMD:LED_RGB_1210" H 6750 4200 50  0001 C CNN
-F 3 "~" H 6750 4200 50  0001 C CNN
-F 4 "	516-1778-6-ND" V 6750 4250 50  0001 C CNN "Part Number"
+F 3 "https://docs.broadcom.com/docs/AV02-0610EN" H 6750 4200 50  0001 C CNN
+F 4 "	516-1778-6-ND" H 6750 4250 50  0001 C CNN " Part Number"
 	1    6750 4250
 	0    -1   -1   0   
 $EndComp

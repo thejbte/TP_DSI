@@ -25,6 +25,7 @@ F 0 "U1" H 3250 3150 50  0000 C CNN
 F 1 "74LS47" H 3250 3000 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm" H 3550 2500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS47" H 3550 2500 50  0001 C CNN
+F 4 "296-3712-5-ND" H 3550 2500 50  0001 C CNN " Part Number"
 	1    3550 2500
 	1    0    0    -1  
 $EndComp
@@ -39,6 +40,7 @@ F 0 "U5" H 6200 3267 50  0000 C CNN
 F 1 "DA56-11GWA" H 6200 3176 50  0000 C CNN
 F 2 "Display_7Segment:DA56-11CGKWA" H 6220 1950 50  0001 C CNN
 F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/DA56-11GWA.pdf" H 6080 2700 50  0001 C CNN
+F 4 "604-DA56-11CGKWA" H 6200 2600 50  0001 C CNN " Part Number"
 	1    6200 2600
 	1    0    0    -1  
 $EndComp
@@ -82,7 +84,8 @@ AR Path="/5D021BAF/5CDE018E" Ref="R?"  Part="1"
 F 0 "R15" V 4300 2400 50  0000 C CNN
 F 1 "330" V 4300 2600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4280 2200 50  0001 C CNN
-F 3 "~" H 4350 2200 50  0001 C CNN
+F 3 "https://www.rohm.com/datasheet/KTR03EZPF/ktr-e" H 4350 2200 50  0001 C CNN
+F 4 "RHM330AZCT-ND" H 4350 2200 50  0001 C CNN " Part Number"
 	1    4350 2200
 	0    1    1    0   
 $EndComp
@@ -96,7 +99,8 @@ AR Path="/5D021BAF/5CDEB3B9" Ref="R?"  Part="1"
 F 0 "R16" V 4300 2500 50  0000 C CNN
 F 1 "330" V 4300 2700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4280 2300 50  0001 C CNN
-F 3 "~" H 4350 2300 50  0001 C CNN
+F 3 "https://www.rohm.com/datasheet/KTR03EZPF/ktr-e" H 4350 2300 50  0001 C CNN
+F 4 "RHM330AZCT-ND" H 4350 2300 50  0001 C CNN " Part Number"
 	1    4350 2300
 	0    1    1    0   
 $EndComp
@@ -110,7 +114,8 @@ AR Path="/5D021BAF/5CDEB627" Ref="R?"  Part="1"
 F 0 "R17" V 4300 2600 50  0000 C CNN
 F 1 "330" V 4300 2800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4280 2400 50  0001 C CNN
-F 3 "~" H 4350 2400 50  0001 C CNN
+F 3 "https://www.rohm.com/datasheet/KTR03EZPF/ktr-e" H 4350 2400 50  0001 C CNN
+F 4 "RHM330AZCT-ND" H 4350 2400 50  0001 C CNN " Part Number"
 	1    4350 2400
 	0    1    1    0   
 $EndComp
@@ -124,7 +129,8 @@ AR Path="/5D021BAF/5CDEB79B" Ref="R?"  Part="1"
 F 0 "R18" V 4300 2700 50  0000 C CNN
 F 1 "330" V 4300 2900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4280 2500 50  0001 C CNN
-F 3 "~" H 4350 2500 50  0001 C CNN
+F 3 "https://www.rohm.com/datasheet/KTR03EZPF/ktr-e" H 4350 2500 50  0001 C CNN
+F 4 "RHM330AZCT-ND" H 4350 2500 50  0001 C CNN " Part Number"
 	1    4350 2500
 	0    1    1    0   
 $EndComp
@@ -138,7 +144,8 @@ AR Path="/5D021BAF/5CDEB915" Ref="R?"  Part="1"
 F 0 "R19" V 4300 2800 50  0000 C CNN
 F 1 "330" V 4300 3000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4280 2600 50  0001 C CNN
-F 3 "~" H 4350 2600 50  0001 C CNN
+F 3 "https://www.rohm.com/datasheet/KTR03EZPF/ktr-e" H 4350 2600 50  0001 C CNN
+F 4 "RHM330AZCT-ND" H 4350 2600 50  0001 C CNN " Part Number"
 	1    4350 2600
 	0    1    1    0   
 $EndComp
@@ -152,7 +159,8 @@ AR Path="/5D021BAF/5CDEBA36" Ref="R?"  Part="1"
 F 0 "R20" V 4300 2900 50  0000 C CNN
 F 1 "330" V 4300 3100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4280 2700 50  0001 C CNN
-F 3 "~" H 4350 2700 50  0001 C CNN
+F 3 "https://www.rohm.com/datasheet/KTR03EZPF/ktr-e" H 4350 2700 50  0001 C CNN
+F 4 "RHM330AZCT-ND" H 4350 2700 50  0001 C CNN " Part Number"
 	1    4350 2700
 	0    1    1    0   
 $EndComp
@@ -166,7 +174,8 @@ AR Path="/5D021BAF/5CDEBB90" Ref="R?"  Part="1"
 F 0 "R21" V 4300 3000 50  0000 C CNN
 F 1 "330" V 4300 3200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4280 2800 50  0001 C CNN
-F 3 "~" H 4350 2800 50  0001 C CNN
+F 3 "https://www.rohm.com/datasheet/KTR03EZPF/ktr-e" H 4350 2800 50  0001 C CNN
+F 4 "RHM330AZCT-ND" H 4350 2800 50  0001 C CNN " Part Number"
 	1    4350 2800
 	0    1    1    0   
 $EndComp
@@ -226,8 +235,9 @@ AR Path="/5D021BAF/5CE3EAA7" Ref="C?"  Part="1"
 F 0 "C8" V 3848 1900 50  0000 C CNN
 F 1 "0.1uF" V 3939 1900 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4138 1750 50  0001 C CNN
-F 3 "~" H 4100 1900 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 4100 1900 50  0001 C CNN
 F 4 "732-7939-1-ND" V 4100 1900 50  0001 C CNN "PArt Number"
+F 5 "399-1282-2-ND" H 4100 1900 50  0001 C CNN " Part Number"
 	1    4100 1900
 	0    1    1    0   
 $EndComp
@@ -374,7 +384,8 @@ AR Path="/5D021BAF/5CD2B4FC" Ref="R?"  Part="1"
 F 0 "R14" V 4250 5250 50  0000 C CNN
 F 1 "10K" V 4250 5400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4280 5300 50  0001 C CNN
-F 3 "~" H 4350 5300 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/chip-resistor/__icsFiles/afieldfile/2019/01/21/RC_Spec_Sheet(1901).pdf" H 4350 5300 50  0001 C CNN
+F 4 "1276-3485-2-ND" H 4350 5300 50  0001 C CNN " Part Number"
 	1    4350 5300
 	1    0    0    -1  
 $EndComp
@@ -390,7 +401,8 @@ AR Path="/5D021BAF/5CD2B4E5" Ref="R?"  Part="1"
 F 0 "R13" V 4050 4950 50  0000 C CNN
 F 1 "1K" V 4050 5100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4080 5000 50  0001 C CNN
-F 3 "~" H 4150 5000 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 4150 5000 50  0001 C CNN
+F 4 "P1.00KHDKR-ND" H 4150 5000 50  0001 C CNN " Part Number"
 	1    4150 5000
 	0    1    1    0   
 $EndComp
@@ -402,9 +414,10 @@ AR Path="/5CCF70C1/5CD2B4DB" Ref="Q1"  Part="1"
 AR Path="/5CFF2978/5CD2B4DB" Ref="Q?"  Part="1" 
 AR Path="/5D021BAF/5CD2B4DB" Ref="Q?"  Part="1" 
 F 0 "Q1" H 4791 5046 50  0000 L CNN
-F 1 "Q_NPN_BCE" H 4791 4955 50  0000 L CNN
+F 1 "STR1550" H 4791 4955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4800 5100 50  0001 C CNN
-F 3 "~" H 4600 5000 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/1d/0e/46/c1/5b/ea/4a/28/DM00040355.pdf/files/DM00040355.pdf/jcr:content/translations/en.DM00040355.pdf" H 4600 5000 50  0001 C CNN
+F 4 "497-13847-6-ND" H 4600 5000 50  0001 C CNN " Part Number"
 	1    4600 5000
 	1    0    0    -1  
 $EndComp
@@ -434,7 +447,8 @@ AR Path="/5D021BAF/5CDFE13A" Ref="R?"  Part="1"
 F 0 "R23" V 6250 5250 50  0000 C CNN
 F 1 "10K" V 6250 5400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6280 5300 50  0001 C CNN
-F 3 "~" H 6350 5300 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/chip-resistor/__icsFiles/afieldfile/2019/01/21/RC_Spec_Sheet(1901).pdf" H 6350 5300 50  0001 C CNN
+F 4 "1276-3485-2-ND" H 6350 5300 50  0001 C CNN " Part Number"
 	1    6350 5300
 	1    0    0    -1  
 $EndComp
@@ -470,7 +484,8 @@ AR Path="/5D021BAF/5CDFE12F" Ref="R?"  Part="1"
 F 0 "R22" V 6050 4950 50  0000 C CNN
 F 1 "1K" V 6050 5100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6080 5000 50  0001 C CNN
-F 3 "~" H 6150 5000 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 6150 5000 50  0001 C CNN
+F 4 "P1.00KHDKR-ND" H 6150 5000 50  0001 C CNN " Part Number"
 	1    6150 5000
 	0    1    1    0   
 $EndComp
@@ -482,9 +497,10 @@ AR Path="/5CCF70C1/5CDFE125" Ref="Q2"  Part="1"
 AR Path="/5CFF2978/5CDFE125" Ref="Q?"  Part="1" 
 AR Path="/5D021BAF/5CDFE125" Ref="Q?"  Part="1" 
 F 0 "Q2" H 6791 5046 50  0000 L CNN
-F 1 "Q_NPN_BCE" H 6791 4955 50  0000 L CNN
+F 1 "STR1550" H 6791 4955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6800 5100 50  0001 C CNN
-F 3 "~" H 6600 5000 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/1d/0e/46/c1/5b/ea/4a/28/DM00040355.pdf/files/DM00040355.pdf/jcr:content/translations/en.DM00040355.pdf" H 6600 5000 50  0001 C CNN
+F 4 "497-13847-6-ND" H 6600 5000 50  0001 C CNN " Part Number"
 	1    6600 5000
 	1    0    0    -1  
 $EndComp
